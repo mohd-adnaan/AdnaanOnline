@@ -1,0 +1,14 @@
+// import IconGo from "./IconGo.png";
+export { default as IconC } from "./IconC.png";
+export { default as IconReact } from "./IconReact.png";
+export { default as IconPython } from "./IconPython.png";
+export { default as IconJS } from "./IconJS.png";
+export { default as IconNode } from "./IconNode.png";
+export { default as IconFB } from "./IconFB.png";
+export { default as IconLinux } from "./IconLinux.png";
+export { default as IconLinkedin } from "./IconLinkedin.png";
+export { default as IconGit } from "./IconGit.png";
+export { default as IconGithub } from "./IconGithub.png";
+export { default as IconPostman } from "./IconPostman.svg";
+export { default as IconReactNative } from "./IconReact.png";
+export { default as IconLeetcode } from "./IconLeetcode.webp";
