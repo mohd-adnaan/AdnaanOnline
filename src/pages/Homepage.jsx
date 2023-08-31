@@ -69,7 +69,7 @@ const Homepage = () => {
                 theme={secondary}
                 mt={4}
               >
-                GET IN TOUCH
+                Mail Me
               </PrimaryButton>
             </Flex>
           </Box>
