@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdnaanOnline - Personal Portfolio Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f3f3;
-            margin: 0;
-            padding: 20px;
-        }
-        .section {
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .description {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        .code {
-            background-color: #f8f8f8;
-            padding: 10px;
-            font-family: 'Courier New', monospace;
-        }
-    </style>
-</head>
-<body>
-    <div class="section">
+
         <div class="title">AdnaanOnline</div>
         <div class="description">Personal portfolio website built with:</div>
         <ul>
@@ -59,5 +23,4 @@
         <div class="code">Run the project with <code>npm start</code></div>
         <div class="description">Have fun 🚀</div>
     </div>
-</body>
-</html>
+
