@@ -1,4 +1,7 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div class="section">
         <div class="title">AdnaanOnline</div>
         <div class="description">Personal portfolio website built with:</div>
         <ul>
@@ -23,4 +26,5 @@
         <div class="code">Run the project with <code>npm start</code></div>
         <div class="description">Have fun 🚀</div>
     </div>
-
+</body>
+</html>
