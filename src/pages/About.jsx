@@ -75,16 +75,18 @@ const About = () => {
             <Body mb="2em" textAlign={{ sm: "center", md: "justify" }}>
             Greetings!!
             <br />
-            I'm Adnaan, currently in my penultimate year of studying Computer Engineering at Zakir Hussain College of Engineering and Technology, Aligarh Muslim University. I thrive on engaging with captivating projects that not only challenge my knowledge but also introduce me to the dynamic and transformative technologies shaping our world. My constant pursuit is to discover improved, ethically sound, and inclusive solutions to the everyday challenges we encounter.
+            I'm Adnaan, currently in my pre-final year of studying Computer Engineering at Zakir Hussain College of Engineering and Technology, Aligarh Muslim University. I thrive on engaging with captivating projects that not only challenge my knowledge but also introduce me to the dynamic and transformative technologies shaping our world. My constant pursuit is to discover improved, ethically sound, and inclusive solutions to the everyday challenges we encounter.
             </Body>
             <Box>
               <Heading3>What I've been up to:</Heading3>
               <Stack as="ul">
                 <Bullet as="li"> Mobile App Developer Intern at NRSC,ISRO(3 months)</Bullet>
                 <Bullet as="li"> Learning Full Stack Development</Bullet>
-                <Bullet as="li"> ACM Treasurer,PI club Event Coordinator, IEEE volunteer. University Merit Scholar</Bullet>
+                <Bullet as="li"> IEEE Vice-Secretary,ACM Treasurer,Web Developer at Machine Learning Club,AMU </Bullet>
+                <Bullet as="li"> University Merit Scholar, Lead Ignite Transform Scholar, Islamic Development Bank Scholar ,Saudi Arabia</Bullet>
                 <Bullet as="li"> Preparing for MITACS & DAAD</Bullet>
                 <Bullet as="li"> In the fantasy of my reading world</Bullet>
+                <Bullet as="li"> Fun-Fact: Glucose and Gluten Intolerant</Bullet>
               </Stack>
             </Box>
           </Stack>
