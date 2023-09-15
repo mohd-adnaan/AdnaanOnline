@@ -64,7 +64,7 @@ import {
   DAC,
   MapIn,
   TTT,
-  sample,
+  ParkEaze,
   DataBird,
 } from "../assets/projects";
 
@@ -141,9 +141,10 @@ const ProjectsList = [
      name: "ParkEaze",
      info: [
        "A Machine Learning Project for detecting available parking slots in real time.",
-       "Jupyter NoteBook"
+       "Jupyter NoteBook",
+       "OpenCV",
      ],
-     media: <ProjectImage src={sample} alt="gif" />,
+     media: <ProjectImage src={ParkEaze} alt="gif" />,
      live: null,
      repo: "https://github.com/mohd-adnaan/ParkEaze",
    },
