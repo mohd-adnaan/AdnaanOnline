@@ -9,7 +9,7 @@ import useColorSwitcher from "../utils/useColorSwitcher";
 
 const Homepage = () => {
   const { colorDark, secondary } = useColorSwitcher();
-  const isMobile = useBreakpointValue({ base: true, md: false });
+  const [isMobile] = useMediaQuery("(max-width: 767px)");
 
   return (
     <motion.div
