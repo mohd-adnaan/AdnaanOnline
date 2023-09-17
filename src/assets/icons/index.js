@@ -12,3 +12,6 @@ export { default as IconGithub } from "./IconGithub.png";
 export { default as IconPostman } from "./IconPostman.svg";
 export { default as IconReactNative } from "./IconReact.png";
 export { default as IconLeetcode } from "./IconLeetcode.webp";
+export { default as IconOpenCV } from "./IconOpenCV.png";
+export { default as IconJava } from "./IconJava.png";
+export { default as IconAndroid } from "./IconAndroid.jpeg";

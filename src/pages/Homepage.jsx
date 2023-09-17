@@ -4,13 +4,10 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import robot from "../assets/projects/Robot.gif";
-import mac from "../assets/projects/giphy2.gif";
-import { Box, Center, Flex, Text,Image } from "@chakra-ui/react";
+import { Box, Flex, Text,Image } from "@chakra-ui/react";
 import { Body, Heading1, Heading3 } from "../components/Typography";
 import { PrimaryButton } from "../components/Buttons";
 
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Float } from "@react-three/drei";
 
 import useColorSwitcher from "../utils/useColorSwitcher";
 
@@ -73,27 +70,15 @@ const Homepage = () => {
                 Mail Me
               </PrimaryButton>
             </Flex>
-          </Box>
-          <Center
-            width={{ lg: "20rem", xl: "30rem" }}
-            height={{ lg: "40rem", xl: "45rem" }}
-            display={{ base: "none", lg: "block" }}
-            mt="0"
-          >
-            <Canvas>
-              <OrbitControls />
-              <ambientLight />
-              <Float speed="4.0" floatIntensity="1.5">
-                
-              </Float>
-            </Canvas>
-          </Center>
-          <Box maxW="500px">
-          <Image src={robot} alt="Robot Gif" w="100%" h="auto" />
-          </Box>
-        </Flex>
-      </Box>
-    </motion.div>
+            </Box>
+          
+              <Box maxW="500px">
+              <Image src={robot} alt="Robot Gif" w="100%" h="auto" />
+              </Box>
+
+              </Flex>
+       </Box>
+     </motion.div>      
   );
 };
 

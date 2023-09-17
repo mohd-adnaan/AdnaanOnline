@@ -59,7 +59,6 @@
 import React from "react";
 import {
   PortfolioProject,
-  PortfolioProjectDark,
   TechQuizzes,
   DAC,
   MapIn,
@@ -77,8 +76,8 @@ const ProjectsList = [
       "Supports light and dark mode,",
       "Updating as My Profile Improves"
     ],
-    media: <img src={PortfolioProjectDark} alt="Portfolio" />,
-    live: null,
+    media: <ProjectImage src={PortfolioProject} type="gif" />,
+    live: "https://adnaanonline.vercel.app/",
     repo: "https://github.com/mohd-adnaan/AdnaanOnline",
   },
   {

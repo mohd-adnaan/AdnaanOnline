@@ -17,6 +17,9 @@ import {
   IconPython,
   IconReact,
   IconGit,
+  IconOpenCV,
+  IconJava,
+  IconAndroid,
 } from "../assets/icons";
 
 const Skills = ({ ...props }) => {
@@ -83,11 +86,11 @@ const Languages = () => {
         name="Python"
         size={{ base: "3em", xl: "5.5em" }}
       />
-      {/* <IconBox
-        icon={IconGo}
-        name="Golang"
+      { <IconBox
+        icon={IconOpenCV}
+        name="OpenCV"
         size={{ base: "3em", xl: "5.5em" }}
-      /> */}
+      /> }
     </>
   );
 };
@@ -104,6 +107,11 @@ const Frameworks = () => {
         name="React"
         size={{ base: "3em", xl: "5.5em" }}
       />
+       <IconBox
+        icon={IconAndroid}
+        name="Android"
+        size={{ base: "3em", xl: "5.5em" }}
+      /> 
       { <IconBox
         icon={IconReact}
         name="React-Native"
@@ -127,16 +135,12 @@ const Tools = () => {
         size={{ base: "3em", xl: "5.5em" }}
       />
       <IconBox icon={IconGit} name="Git" size={{ base: "3em", xl: "5.5em" }} />
-      {/* <IconBox
-        icon={IconDocker}
-        name="Docker"
+      <IconBox
+        icon={IconJava}
+        name="Java"
         size={{ base: "3em", xl: "5.5em" }}
       />
-      <IconBox
-        icon={IconFigma}
-        name="Figma"
-        size={{ base: "3em", xl: "5.5em" }}
-      /> */}
+
     </>
   );
 };
