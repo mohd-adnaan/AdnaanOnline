@@ -105,9 +105,9 @@ const ProjectsList = [
     name: "Data-Bird",
     info: [
       "Data Bird | HTML5, CSS, JavaScript, Eel, Python, XML, AWS, GIT, MySQL",
-      "• Data Bird is a software that will help you with all your data driven tasks",
-      "• It brings Data mining, Task scheduling and price tracking all together on a GUI based no-code platform",
-      "• Distinguished features: Data Scraping, Price Tracking, Data APIs, Data Storage, Data Visualization",
+      " Data Bird is a software that will help you with all your data driven tasks",
+      " It brings Data mining, Task scheduling and price tracking all together on a GUI based no-code platform",
+      " Distinguished features: Data Scraping, Price Tracking, Data APIs, Data Storage, Data Visualization",
     ],
     media: <ProjectImage src={DataBird} tpye="gif" />,
     live: "https://databirdservices.com",

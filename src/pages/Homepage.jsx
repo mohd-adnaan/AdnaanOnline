@@ -43,11 +43,10 @@ const Homepage = () => {
               >
                 Hello, I'm
               </Text>
-              <Heading1>
-               Mohd Adnaan
-              <Image src={"https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"} alt="hey symbol" style={{ height: '10vh', display: 'inline-block' }} />
-              </Heading1>
-
+              <Heading2 big={true}>
+                Adnaan
+              <Image src={"https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"} alt="hey symbol" style={{ height: '8vh', display: 'inline-block' }} />
+              </Heading2>
 
               <Heading3 big={true} color={secondary}>
                 Learning Everything
