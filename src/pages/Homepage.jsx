@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import robot from "../assets/projects/Robot.gif";
 import { Box, Flex,Center, Text,Image } from "@chakra-ui/react";
-import { Body, Heading1, Heading3 } from "../components/Typography";
+import { Body, Heading1, Heading2, Heading3 } from "../components/Typography";
 import { PrimaryButton } from "../components/Buttons";
 
 
@@ -43,7 +43,12 @@ const Homepage = () => {
               >
                 Hello, I'm
               </Text>
-              <Heading1>Mohd Adnaan</Heading1>
+              <Heading1>
+               Mohd Adnaan
+              <Image src={"https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"} alt="hey symbol" style={{ height: '10vh', display: 'inline-block' }} />
+              </Heading1>
+
+
               <Heading3 big={true} color={secondary}>
                 Learning Everything
               </Heading3>
@@ -82,7 +87,7 @@ const Homepage = () => {
 
               <Box maxW="500px">
               <Image src={robot} alt="Robot Gif" w="100%" h="auto" />
-              </Box>
+              </Box>``
 
             </Center>
           </Flex>
