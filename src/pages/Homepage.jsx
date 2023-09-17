@@ -1,9 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import robot from "../assets/projects/Robot.gif";
-import { Box, Flex, Text,Image } from "@chakra-ui/react";
+import { Box, Flex,Center, Text,Image } from "@chakra-ui/react";
 import { Body, Heading1, Heading3 } from "../components/Typography";
 import { PrimaryButton } from "../components/Buttons";
+
+
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Float } from "@react-three/drei";
 
 
 import useColorSwitcher from "../utils/useColorSwitcher";
@@ -41,7 +45,7 @@ const Homepage = () => {
               </Text>
               <Heading1>Mohd Adnaan</Heading1>
               <Heading3 big={true} color={secondary}>
-                Learning Full Stack App & Web Development, ML & AI
+                Learning Everything
               </Heading3>
               <Body
                 w={{ base: "80%", xl: "40%" }}
@@ -56,7 +60,8 @@ const Homepage = () => {
 <br>
 
 </br>
-                I'm a pre-final year Computer Engineering student at Z.H.C.E.T with a fervor for curiosity-driven coding and creating inclusive mobile & web experiences. Enthusiastic about learning and applying skills to new projects, I welcome opportunities for growth and connection.
+              A curiosity-driven coder with a passion for developing inclusive mobile & 
+              web experiences. Enthusiastic about learning and applying skills to new projects.
               </Body>
               <PrimaryButton
                 as="a"
@@ -68,12 +73,19 @@ const Homepage = () => {
               </PrimaryButton>
             </Flex>
             </Box>
-          
+            <Center
+            width={{ lg: "20rem", xl: "30rem" }}
+            height={{ lg: "40rem", xl: "45rem" }}
+            display={{ base: "none", lg: "block" }}
+            mt="0"
+            >
+
               <Box maxW="500px">
               <Image src={robot} alt="Robot Gif" w="100%" h="auto" />
               </Box>
 
-              </Flex>
+            </Center>
+          </Flex>
        </Box>
      </motion.div>      
   );
