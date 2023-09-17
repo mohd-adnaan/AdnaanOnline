@@ -9,6 +9,7 @@ import useColorSwitcher from "../utils/useColorSwitcher";
 
 const Homepage = () => {
   const { colorDark, secondary } = useColorSwitcher();
+  const isMobile = useBreakpointValue({ base: true, md: false });
 
   return (
     <motion.div
@@ -23,11 +24,11 @@ const Homepage = () => {
         px={{ base: "0", md: "20", xl: "0" }}
       >
         <Flex
-          flexDir={{ base: "column", md: "row" }}
+          flexDir={{ base: "column-reverse", md: "row" }}
           justifyContent={{ md: "space-between" }}
           alignItems={{ sm: "center", lg: "flex-start" }}
         >
-          <Box as="section" textAlign={{ base: "center", md: "left" }}>
+          <Box as="section" textAlign={isMobile ? "center" : "left"}>
             <Text
               color={colorDark}
               fontFamily="Space Mono, monospace"
