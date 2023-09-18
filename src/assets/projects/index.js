@@ -5,3 +5,4 @@ export { default as MapIn } from "./MapIn.gif";
 export { default as DataBird } from "./DataBird.gif";
 export {default as TTT} from "./ttt.gif";
 export { default as ParkEaze } from "./ParkEaze.gif";
+export { default as Kisaan } from "./Kisaan.gif";

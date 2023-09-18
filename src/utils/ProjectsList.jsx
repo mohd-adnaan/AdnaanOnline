@@ -65,6 +65,7 @@ import {
   TTT,
   ParkEaze,
   DataBird,
+  Kisaan,
 } from "../assets/projects";
 
 import ProjectImage from "../components/miscellaneous/ProjectImage"
@@ -96,10 +97,23 @@ const ProjectsList = [
     info: [
       "A web app designed for tech-savvy individuals to assess their programming knowledge and enhance their learning by fearlessly tackling multiple-choice questions (MCQs).",
       "One can practice as many as 1200+ questions.",
+      "Learning and Innovation. "
     ],
     media: <ProjectImage src={TechQuizzes} type="gif" />,
     live: "https://techquizzes.vercel.app/",
     repo: "https://github.com/mohd-adnaan/Tech-Quizzes",
+  },
+  {
+    name: "Kisaan",
+    info: [
+      "An app for the Dissemination of Agromet Advisory Services to take decisions in day-to-day farm operation by farmers.",
+      "Uses React-native,Java-Script, Java,C++,Objective C++ , Postgres, and PhP",
+      "Design and Develop by NRSC,ISRO,India as a Reseach & Mobile Developer Intern."
+    ],
+    media: <ProjectImage src={Kisaan} type="gif" />,
+    //live : "https://docs.google.com/document/d/1tPbji7SMzDDeHS1U0BJB22zcux5G5zOtqoGtUfCgxmc/edit?usp=sharing",
+    live: null,
+    repo: "https://github.com/mohd-adnaan/Kisaan",
   },
   {
     name: "Data-Bird",
@@ -113,19 +127,8 @@ const ProjectsList = [
     live: "https://databirdservices.com",
     repo: "https://github.com/mohd-adnaan/Data-Bird",
   },
-    {
-    name: "MapIn",
-    info: [
-      "An app for Marking and drawing shapes on a location of the Indian Map.",
-      "Uses React-native,Java-Script, Java,C++,Objective C++ , Postgres, and PhP",
-      "Aside this Project I also have Kisaan app for the Dissemination of Agromet Advisory Services to take decision in day-to-day farm operation by farmers.",
-      "Go to live Site for Kisaan",
-    ],
-    media: <ProjectImage src={MapIn} type="gif" />,
-    //live : "https://docs.google.com/document/d/1tPbji7SMzDDeHS1U0BJB22zcux5G5zOtqoGtUfCgxmc/edit?usp=sharing",
-    live: "https://github.com/mohd-adnaan/Kisaan",
-    repo: "https://github.com/mohd-adnaan/Map_In",
-  },
+
+
   {
     name: "AI-Tic-Tac-Toe",
     info: [
@@ -147,6 +150,17 @@ const ProjectsList = [
      live: null,
      repo: "https://github.com/mohd-adnaan/ParkEaze",
    },
+   {
+    name: "MapIn",
+    info: [
+      "An app for Marking and drawing shapes on a location of the Indian Map.",
+      "Uses React-native,Java-Script, Java,C++,Objective C++ , Postgres, and PhP",
+    ],
+    media: <ProjectImage src={MapIn} type="gif" />,
+    //live : "https://docs.google.com/document/d/1tPbji7SMzDDeHS1U0BJB22zcux5G5zOtqoGtUfCgxmc/edit?usp=sharing",
+    live: "null",
+    repo: "https://github.com/mohd-adnaan/Map_In",
+  },
   
 ];
 
