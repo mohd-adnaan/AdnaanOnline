@@ -12,6 +12,7 @@ import {
   IconGithub,
   IconLeetcode,
   IconLinkedin,
+  IconTwitter,
 } from "../assets/icons";
 
 import useColorSwitcher from "../utils/useColorSwitcher";
@@ -101,6 +102,12 @@ const Contact = ({ ...props }) => {
             link="https://github.com/mohd-adnaan"
             size="3em"
             name="Github"
+          />
+          <IconBox
+          icon={IconTwitter}
+          link="https://twitter.com/callmeadnaan19"
+          size="3em"
+          name="Twitter"
           />
           <IconBox
             icon={IconLeetcode}

@@ -15,3 +15,4 @@ export { default as IconLeetcode } from "./IconLeetcode.webp";
 export { default as IconOpenCV } from "./IconOpenCV.png";
 export { default as IconJava } from "./IconJava.png";
 export { default as IconAndroid } from "./IconAndroid.jpeg";
+export { default as IconTwitter} from "./twitter.jpeg";
