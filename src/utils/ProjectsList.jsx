@@ -146,7 +146,7 @@ const ProjectsList = [
        "Jupyter NoteBook",
        "OpenCV",
      ],
-     media: <ProjectImage src={ParkEaze} alt="gif" />,
+     media: <ProjectImage src={ParkEaze} type="gif" />,
      live: null,
      repo: "https://github.com/mohd-adnaan/ParkEaze",
    },
