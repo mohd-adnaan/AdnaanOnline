@@ -66,6 +66,8 @@ import {
   ParkEaze,
   DataBird,
   Kisaan,
+  FloatingPiano,
+  Diabetic_Blindness_Detection,
 } from "../assets/projects";
 
 import ProjectImage from "../components/miscellaneous/ProjectImage"
@@ -151,6 +153,18 @@ const ProjectsList = [
      repo: "https://github.com/mohd-adnaan/ParkEaze",
    },
    {
+    name: "Floating Piano",
+    info: [
+      "Floating Piano is a computer vision based project that allows you to play a virtual piano through hand-gesture.",
+      "The hand is detected using the the black color mask we created using the HSV scale.",
+      "After the hand is detected, we draw a convex hull, to find the surrounding convex polygon. From this polygon we extract the finger-tips using the convexity defects function. "
+    ],
+    media: <ProjectImage src={FloatingPiano} type="gif" />,
+    live: null,
+    repo: "https://github.com/mohd-adnaan/flaotingPiano",
+  },
+
+   {
     name: "MapIn",
     info: [
       "An app for Marking and drawing shapes on a location of the Indian Map.",
@@ -161,6 +175,17 @@ const ProjectsList = [
     live: "null",
     repo: "https://github.com/mohd-adnaan/Map_In",
   },
+  {
+    name:"Diabetic Blindness Detection",
+    info:
+    [
+    "Diabetic Retinopathy is an eye-condition developed in patients with diabetics that gradually turn into blindness.",
+    "This is a code implementation of the paper - Diabetic Retinopathy Detection using Texture Features and Ensemble Learning." ,
+    ],
+    media: <ProjectImage src={Diabetic_Blindness_Detection} type=".jpeg" style={{ maxWidth: "100%", maxHeight: "100%" }}  />,
+    live: "https://doi.org/10.1109/TENSYMP50017.2020.9230600",
+    repo: "https://github.com/mohd-adnaan/Diabetic_Blindness_Detection",
+  }
   
 ];
 

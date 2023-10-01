@@ -86,7 +86,7 @@ const Homepage = () => {
 
               <Box maxW="500px">
               <Image src={robot} alt="Robot Gif" w="100%" h="auto" />
-              </Box>``
+              </Box>
 
             </Center>
           </Flex>
