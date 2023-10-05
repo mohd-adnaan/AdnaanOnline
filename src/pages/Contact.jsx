@@ -70,7 +70,7 @@ const Contact = ({ ...props }) => {
             </PrimaryButton>
             <PrimaryButton
               as="a"
-              href="https://drive.google.com/file/d/1yMsB6djUwGN2YQCuYSXHRDBTE2tZFEIN/view?usp=sharing"
+              href="https://drive.google.com/file/d/1QuomRfM_iRewEe7g59rdRU5UUZBcnZd7/view?usp=sharing"
               theme={secondary}
               mt={4}
               target="_blank"
