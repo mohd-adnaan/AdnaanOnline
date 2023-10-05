@@ -65,7 +65,7 @@ const Homepage = () => {
 
 </br>
               A curiosity-driven coder with a passion for developing inclusive mobile & 
-              web experiences. Enthusiastic about learning and applying skills to new projects.
+              web experiences empowered with AI and ML. Enthusiastic about learning and applying skills to new projects.
               </Body>
               <PrimaryButton
                 as="a"
