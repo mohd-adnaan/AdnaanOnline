@@ -5,7 +5,6 @@ import { Box, Text, Grid } from "@chakra-ui/react";
 
 import SectionHeader from "../components/miscellaneous/SectionHeader";
 import IconBox from "../components/miscellaneous/IconBox";
-
 import { Heading2 } from "../components/Typography";
 
 import {
@@ -13,13 +12,19 @@ import {
   IconFB,
   IconJS,
   IconNode,
-  IconPostman,
   IconPython,
   IconReact,
   IconGit,
+  IconYolo,
   IconOpenCV,
   IconJava,
   IconAndroid,
+  IconPHP,
+  IconSQL,
+  IconPostman,
+  IconGoogleCloud,
+  IconTensorFlow,
+  IconJupyterNotebook,
 } from "../assets/icons";
 
 const Skills = ({ ...props }) => {
@@ -65,6 +70,7 @@ const Skills = ({ ...props }) => {
         >
           <Languages />
           <Frameworks />
+          <ComputerVision />
           <Tools />
         </Grid>
       </Box>
@@ -75,7 +81,10 @@ const Skills = ({ ...props }) => {
 const Languages = () => {
   return (
     <>
-      <IconBox icon={IconC} name="C++" size={{ base: "3em", xl: "5.5em" }} />
+      <IconBox
+        icon={IconC}
+        name="C++"
+        size={{ base: "3em", xl: "5.5em" }} />
       <IconBox
         icon={IconJS}
         name="JavaScript"
@@ -86,11 +95,11 @@ const Languages = () => {
         name="Python"
         size={{ base: "3em", xl: "5.5em" }}
       />
-      { <IconBox
-        icon={IconOpenCV}
-        name="OpenCV"
+      {<IconBox
+        icon={IconJava}
+        name="Java"
         size={{ base: "3em", xl: "5.5em" }}
-      /> }
+      />}
     </>
   );
 };
@@ -107,21 +116,16 @@ const Frameworks = () => {
         name="React"
         size={{ base: "3em", xl: "5.5em" }}
       />
-       <IconBox
+      <IconBox
         icon={IconAndroid}
         name="Android"
         size={{ base: "3em", xl: "5.5em" }}
-      /> 
-      { <IconBox
+      />
+      {<IconBox
         icon={IconReact}
         name="React-Native"
         size={{ base: "3em", xl: "5.5em" }}
-      /> }
-      <IconBox
-        icon={IconFB}
-        name="Firebase"
-        size={{ base: "3em", xl: "5.5em" }}
-      />
+      />}
     </>
   );
 };
@@ -130,18 +134,55 @@ const Tools = () => {
   return (
     <>
       <IconBox
+        icon={IconFB}
+        name="Firebase"
+        size={{ base: "3em", xl: "5.5em" }}
+      />
+      <IconBox
         icon={IconPostman}
         name="Postman"
         size={{ base: "3em", xl: "5.5em" }}
       />
-      <IconBox icon={IconGit} name="Git" size={{ base: "3em", xl: "5.5em" }} />
       <IconBox
-        icon={IconJava}
-        name="Java"
+        icon={IconSQL}
+        name="SQL"
         size={{ base: "3em", xl: "5.5em" }}
       />
-
+      {<IconBox
+        icon={IconPHP}
+        name="PHP"
+        size={{ base: "3em", xl: "5.5em" }}
+      />}
     </>
   );
 };
+
+const ComputerVision = () => {
+  return (
+    <>
+      <IconBox
+        icon={IconYolo}
+        name="Yolo"
+        size={{ base: "3em", xl: "5.5em" }}
+      />
+      <IconBox
+        icon={IconOpenCV}
+        name="OpenCV"
+        size={{ base: "3em", xl: "5.5em" }}
+      />
+      <IconBox
+        icon={IconJupyterNotebook}
+        name="JupyterNotebook"
+        size={{ base: "3em", xl: "5.5em" }}
+      />
+      {
+        <IconBox
+          icon={IconGit}
+          name="Git"
+          size={{ base: "3em", xl: "5.5em" }} />
+      }
+    </>
+  );
+};
+
 export default Skills;

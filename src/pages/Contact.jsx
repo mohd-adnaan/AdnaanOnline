@@ -10,6 +10,8 @@ import { Heading2, TextLarge } from "../components/Typography";
 import IconBox from "../components/miscellaneous/IconBox";
 import {
   IconGithub,
+  IconInstagram,
+  IconKaggle,
   IconLeetcode,
   IconLinkedin,
   IconTwitter,
@@ -115,6 +117,19 @@ const Contact = ({ ...props }) => {
             size="3em"
             name="Leetcode"
           />
+          <IconBox
+            icon={IconInstagram}
+            link="https://www.instagram.com/adnaan.this.side/"
+            size="3em"
+            name="Instagram"
+          />
+          <IconBox
+            icon={IconKaggle}
+            link="https://www.kaggle.com/adnaanthisside"
+            size="3em"
+            name="Kaggle"
+          />
+
         
         </Grid>
       </Box>
