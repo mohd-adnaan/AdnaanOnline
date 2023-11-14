@@ -87,11 +87,12 @@ const ProjectsList = [
    },
  
   {
-    name: "SegFormerForSemanticSegmentation",
+    name: "SegFormer For Semantic Segmentation",
     info: [
       "This repository contains a notebook where I fine-tuned the SegFormerForSemanticSegmentation model on a custom semantic segmentation dataset called RUGD.",
       "The objective of the model is to assign a specific label to each pixel in an image from a predefined list of classes.",
-      "The model is initialized with weights pre-trained on the ImageNet-1k dataset and further fine-tuned along with the decoder head, which begins with randomly initialized weights.",
+      "Implementation of the Paper: 'SegFormer : Simple and Efficient Design for Semantic  Segmentation with Transformer' ",
+      // "The model is initialized with weights pre-trained on the ImageNet-1k dataset and further fine-tuned along with the decoder head, which begins with randomly initialized weights.",
     ],
     media: <ProjectImage src={ImageSegmentation} type="gif" />,
 
@@ -138,7 +139,7 @@ const ProjectsList = [
     info:
     [
     "Diabetic Retinopathy is an eye-condition developed in patients with diabetics that gradually turn into blindness.",
-    "This is a code implementation of the paper - Diabetic Retinopathy Detection using Texture Features and Ensemble Learning." ,
+    "This is a code implementation of the paper - 'Diabetic Retinopathy Detection using Texture Features and Ensemble Learning.' " ,
     ],
     media: <ProjectImage src={Diabetic_Blindness_Detection} type=".jpeg" style={{ maxWidth: "100%", maxHeight: "100%" }}  />,
     live: "https://doi.org/10.1109/TENSYMP50017.2020.9230600",
