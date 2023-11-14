@@ -88,7 +88,7 @@ const About = () => {
               <br/>
               <Heading3>
               <Stack as="ul">
-                <Bullet as="li"> My interest is in making machines understand images and videos as we humans do.</Bullet>
+                <Bullet as="li"> My interest is in making machines understand and perform tasks as we humans do.</Bullet>
                 <Bullet as="li"> I have applied knowledge of Machine Learning, Deep Learning and Image Processing</Bullet>
                 <Bullet as="li"> Mobile App Developer & Research Intern at NRSC,ISRO(3 months)</Bullet>
                 <Bullet as="li"> Full Stack Application Developer</Bullet>
