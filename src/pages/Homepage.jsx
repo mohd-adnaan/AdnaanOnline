@@ -47,6 +47,7 @@ const Homepage = () => {
               </Text>
               <Heading1>
               Adnaan <Image src={"https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"} alt="hey symbol" style={{ height: '8vh', display: 'inline-block' }} />
+
               </Heading1>
               
               <Heading3 big={true} color={secondary}>
@@ -62,9 +63,13 @@ const Homepage = () => {
                 }}
                 fontWeight="bold"
               >
+               <br>
+               </br>
                 A curiosity-driven coder with a passion for developing inclusive mobile & 
                  web experiences empowered with AI and ML. Enthusiastic about learning and applying skills to new projects.
               </Body>
+              <br>
+               </br>
               <PrimaryButton
                 as="a"
                 href="mailto:iamadnaanmohd21@gmail.com"
