@@ -1,19 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import robot from "../assets/projects/Robot.gif";
+import robotDamn from "../assets/projects/robotDamn.gif";
+import robotRead from "../assets/projects/robotRead.gif";
+import robotScience from "../assets/projects/robotScience.gif";
+import robotHurray from "../assets/projects/robotHurray.gif";
+import robotGoogles from "../assets/projects/robotGoogles.gif";
+import robotFly from "../assets/projects/robotFly.gif";
+import robotJump from "../assets/projects/robotJump.gif"
+import robotDraw from "../assets/projects/robotDraw.gif";
 import { Box, Flex,Center, Text,Image } from "@chakra-ui/react";
 import { Body, Heading1, Heading2, Heading3 } from "../components/Typography";
 import { PrimaryButton } from "../components/Buttons";
-
-
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Float } from "@react-three/drei";
-
-
 import useColorSwitcher from "../utils/useColorSwitcher";
 
 const Homepage = () => {
   const { colorDark, secondary } = useColorSwitcher();
+  const [currentRobotGif, setCurrentRobotGif] = useState(robotRead);
+  const robotGifs = [
+    robotDamn,
+    robotRead,
+    robotScience,
+    robotHurray,
+    robotGoogles,
+    robotFly,
+    robotJump,
+    robotDraw,
+  ];
+
+  let currentIndex = 0;
+
+  const changeRobotGif = () => {
+    currentIndex = (currentIndex + 1) % robotGifs.length;
+    setCurrentRobotGif(robotGifs[currentIndex]);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(changeRobotGif, 3000);
+
+    return () => clearInterval(intervalId);
+  }, []); 
 
   return (
     <motion.div
@@ -46,6 +71,7 @@ const Homepage = () => {
               <Heading2 big={true}>
                 Adnaan
               <Image src={"https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"} alt="hey symbol" style={{ height: '8vh', display: 'inline-block' }} />
+              
               </Heading2>
 
               <Heading3 big={true} color={secondary}>
@@ -77,6 +103,7 @@ const Homepage = () => {
               </PrimaryButton>
             </Flex>
             </Box>
+
             <Center
             width={{ lg: "20rem", xl: "30rem" }}
             height={{ lg: "40rem", xl: "45rem" }}
@@ -84,10 +111,14 @@ const Homepage = () => {
             mt="0"
             >
 
-              <Box maxW="500px">
-              <Image src={robot} alt="Robot Gif" w="100%" h="auto" />
-              </Box>
-
+                <Box maxW="500px">
+                  <Image
+                    src={currentRobotGif}
+                    alt="Robot Gif"
+                    w="100%"
+                    h="auto"
+                  />
+                </Box>
             </Center>
           </Flex>
        </Box>
