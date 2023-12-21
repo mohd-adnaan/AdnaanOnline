@@ -18,7 +18,7 @@ const customTheme = extendTheme({
       body: {
         overflowX: "hidden",
         color: props.colorMode === "light" ? "default.dark" : "default.light",
-        bg: props.colorMode === "light" ? "#c6d9f2" : "#232323",
+        bg: props.colorMode === "light" ? "#F3F8FF" : "#232323",
         fontFamily: "body",
         transitionProperty: "all",
         transitionDuration: "normal",
