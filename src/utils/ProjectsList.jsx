@@ -13,7 +13,7 @@ import {
   ImageSegmentation,
   Grow,
   Echo,
-  AINavigatioo,
+  AINavigation,
 } from "../assets/projects";
 import EchoVideo from "../assets/projects/EchoVideo.mp4";
 import ProjectImage from "../components/miscellaneous/ProjectImage"

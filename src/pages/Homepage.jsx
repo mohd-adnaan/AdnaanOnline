@@ -1,22 +1,59 @@
-
 import React from "react";
-
 import RobotModel from "../RobotModel";
-
 import { motion } from "framer-motion";
-
 import { Box, Center, Flex, Text,Image } from "@chakra-ui/react";
 import { Body, Heading1, Heading3 } from "../components/Typography";
 import { PrimaryButton } from "../components/Buttons";
-
+import { useState, useEffect } from 'react';
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Float } from "@react-three/drei";
-
 import useColorSwitcher from "../utils/useColorSwitcher";
+
+const useTextAnimation = (texts = [], typingSpeed = 150, deletingSpeed = 75, delay = 2000) => {
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
+  const [reverse, setReverse] = useState(false);
+  const [text, setText] = useState('');
+  const [isErasing, setIsErasing] = useState(false); 
+
+useEffect(() => {
+  if (subIndex === texts[index].length + 1 && !reverse) {
+    setTimeout(() => setReverse(true), delay);
+    setIsErasing(true);
+    return;
+  }
+
+  if (subIndex === 0 && reverse) {
+    setReverse(false);
+    setIsErasing(true);
+    setIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    return;
+  }
+
+  const timeout = setTimeout(() => {
+    setText(texts[index].substring(0, subIndex));
+    setSubIndex((prevSubIndex) => prevSubIndex + (reverse ? -1 : 1));
+  }, reverse ? deletingSpeed : typingSpeed);
+
+  return () => clearTimeout(timeout);
+}, [texts, index, subIndex, reverse, typingSpeed, deletingSpeed, delay]);
+
+return { text, isErasing };
+};
 
 const Homepage = () => {
   const { colorDark, secondary } = useColorSwitcher();
-
+  const { text: animatedText, isErasing } = useTextAnimation([
+    'Full-Stack App Developer',
+    'ML & DL Enthusiast',
+    'Computer Engineering Major at AMU'
+  ], 150, 75, 2000);
+  const placeholderStyle = {
+    display: 'inline-block', 
+    height: '8vh', 
+    width: '8vh', // Assuming the width is similar to the height for the symbol
+    visibility: 'hidden'
+  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -46,13 +83,13 @@ const Homepage = () => {
                 Hello, I'm
               </Text>
               <Heading1>
-              Adnaan <Image src={"https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"} alt="hey symbol" style={{ height: '8vh', display: 'inline-block' }} />
-
+                Adnaan {isErasing ? <span style={placeholderStyle}></span> : <Image src={"https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"} alt="hey symbol" style={{ height: '8vh', display: 'inline-block' }} />}
               </Heading1>
-              
-              <Heading3 big={true} color={secondary}>
-                Full-Stack App Developer
-              </Heading3>
+
+      <Box as={Heading3} big={true} color={secondary} minHeight="1.5em">
+                {animatedText}
+              </Box>
+
               <Body
                 w={{ base: "80%", xl: "40%" }}
                 bg={{
