@@ -1,4 +1,4 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme } from '@chakra-ui/react';
 
 const breakpoints = {
   sm: "16em",
@@ -8,7 +8,7 @@ const breakpoints = {
   "2xl": "96em",
 };
 
-const customTheme = extendTheme({
+const customTheme = extendTheme ({
   breakpoints,
   styles: {
     global: props => ({

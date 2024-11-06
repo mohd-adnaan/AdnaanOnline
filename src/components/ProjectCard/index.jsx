@@ -2,6 +2,7 @@ import { Box, Stack } from "@chakra-ui/react";
 import { PrimaryButton, SecondaryButton } from "../Buttons";
 import Bullet from "../miscellaneous/Bullet";
 import { Body, Heading3 } from "../Typography";
+import React from 'react';
 
 export const ProjectCard = ({ media, ...props }) => {
   return (

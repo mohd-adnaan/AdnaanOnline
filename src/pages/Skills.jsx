@@ -22,8 +22,6 @@ import {
   IconPHP,
   IconSQL,
   IconPostman,
-  IconGoogleCloud,
-  IconTensorFlow,
   IconJupyterNotebook,
 } from "../assets/icons";
 

@@ -1,5 +1,6 @@
 import { Image } from "@chakra-ui/react";
 import profile from "../../assets/personal/adnaan.jpg";
+import React from 'react';
 
 const ProfileImage = () => {
   return (

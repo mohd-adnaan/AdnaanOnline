@@ -1,5 +1,6 @@
 import { Button } from "@chakra-ui/react";
 import useColorSwitcher from "../../utils/useColorSwitcher";
+import React from 'react';
 
 export const StyledButton = ({
   hoverBg,

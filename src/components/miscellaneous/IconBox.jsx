@@ -1,8 +1,7 @@
+import React from 'react';
 import { Body } from "../Typography";
 import { Image, VStack } from "@chakra-ui/react";
-
 import useColorSwitcher from "../../utils/useColorSwitcher";
-
 const SkillBox = ({ icon, name, size, link, ...props }) => {
   const { colorDark } = useColorSwitcher();
 

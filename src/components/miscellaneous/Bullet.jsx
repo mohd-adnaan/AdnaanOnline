@@ -1,6 +1,7 @@
 import { Box, Stack } from "@chakra-ui/react";
 import useColorSwitcher from "../../utils/useColorSwitcher";
 import { Body } from "../Typography";
+import React from 'react';
 
 export default function Bullet({ children, ...props }) {
   const { secondary } = useColorSwitcher();
