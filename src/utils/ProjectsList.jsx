@@ -13,9 +13,10 @@ import {
   ImageSegmentation,
   Grow,
   Echo,
+  CovidProject,
   AINavigation,
+  Sight
 } from "../assets/projects";
-import EchoVideo from "../assets/projects/EchoVideo.mp4";
 import ProjectImage from "../components/miscellaneous/ProjectImage"
 const ProjectsList = [
   {
@@ -27,6 +28,22 @@ const ProjectsList = [
     media: <ProjectImage src={PortfolioProject} type="gif" />,
     live: "https://adnaanonline.vercel.app/",
     repo: "https://github.com/mohd-adnaan/AdnaanOnline",
+  },
+  {
+    name: "Sight",
+    info: [
+      // "Worked as a MITACS Graduate Research Intern at McGill University for 12 weeks, Canada, under Professor Jeremy Cooperstock on “Autonomous Navigation Assistance for the Visually Impaired” in Shared Reality Lab, McConnell Engineering ",
+      // "I was scrum master for the project carrying out the Research, Data gathering and cleansing, custom model training and interesting the model to develop an iOS application for assistance to the blind individuals for the detection and safe navigation to Bus Shelters, Door and Intersection Crossways. Added the CyberSight and advance the research by adding functional of one shot object detection, Text Detection,Optical Reading functionality and text to speech conversion.",
+      // "And all these functionality in under 160 MB iOS application with minimum support of iOS 14.", 
+      "Completed a 12-week MITACS Graduate Research Internship at McGill University's Shared Reality Lab, under Professor Jeremy Cooperstock",
+      "Focused on developing an iOS app for autonomous navigation assistance for the visually impaired.",
+      "Led the project as Scrum Master, conducting research, data gathering, model training, and integrating features like object detection, text detection, OCR, and text-to-speech",
+      "Achieved a compact, fully functional prototype (under 160 MB, iOS 14+) for bus shelter, door, and crosswalk detection",
+      "This is just an initial prototype, and the final product is under Non Disclosure Agreement(NDA).",
+    ],
+    media: <ProjectImage src={Sight} type="gif" />,
+    live: "https://youtube.com/shorts/tjjbdm7UCZ8",
+    repo: "https://github.com/Shared-Reality-Lab/cybersight/tree/sight",
   },
   {
     name: "DAC(Digital Address Code)",
@@ -50,6 +67,16 @@ const ProjectsList = [
     media: <ProjectImage src={Grow} type="gif" />,
     live: null,
     repo: "https://github.com/mohd-adnaan/Grow",
+  },
+  {
+    name: "Covid Resources Website",
+    info: [
+      "Built using the 2nd wave of Covid-19 in India",
+      "Uses Google sheets as data layer for dynamic data fetching",
+      "Website visits: 100k +",
+    ],
+    media: <ProjectImage src={CovidProject} alt="Covid Resources Project" />,
+    live: "https://multicode-phi.vercel.app"
   },
   {
     name: "Tech-Quizzes",

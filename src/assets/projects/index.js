@@ -12,3 +12,5 @@ export { default as ImageSegmentation } from "./ImageSegmentation.gif";
 export { default as AINavigation } from "./AINavigation.gif";
 export { default as Grow } from "./Grow.gif";
 export { default as Echo } from "./Echo.gif";
+export { default as CovidProject} from "./CovidProject.jpeg";
+export { default as Sight } from "./Sight.gif";

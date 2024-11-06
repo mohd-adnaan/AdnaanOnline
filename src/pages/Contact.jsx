@@ -11,7 +11,7 @@ import IconBox from "../components/miscellaneous/IconBox";
 import {
   IconGithub,
   IconInstagram,
-  IconKaggle,
+  IconCodeforces,
   IconLeetcode,
   IconLinkedin,
   IconTwitter,
@@ -64,7 +64,7 @@ const Contact = ({ ...props }) => {
           >
             <PrimaryButton
               as="a"
-              href="mailto:iamadnaanmohd21@gmail.com"
+              href="mailto:mohammadadnan@zhcet.ac.in"
               theme={secondary}
               mt={4}
             >
@@ -72,7 +72,7 @@ const Contact = ({ ...props }) => {
             </PrimaryButton>
             <PrimaryButton
               as="a"
-              href="https://drive.google.com/file/d/1QuomRfM_iRewEe7g59rdRU5UUZBcnZd7/view?usp=sharing"
+              href="https://drive.google.com/file/d/1M7D9ViCB32xLirxyTd09W8aTp6260M5K/view?usp=sharing"
               theme={secondary}
               mt={4}
               target="_blank"
@@ -124,13 +124,11 @@ const Contact = ({ ...props }) => {
             name="Instagram"
           />
           <IconBox
-            icon={IconKaggle}
-            link="https://www.kaggle.com/adnaanthisside"
+            icon={IconCodeforces}
+            link="https://codeforces.com/profile/adnaanonline#"
             size="3em"
-            name="Kaggle"
+            name="Codeforces"
           />
-
-        
         </Grid>
       </Box>
     </motion.div>

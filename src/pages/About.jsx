@@ -175,13 +175,11 @@ const About = () => {
           <Stack spacing={{ sm: '8' }} p="8px" w={{ base: '100%', xl: '50%' }}>
             <Body mb="2em" textAlign={{ sm: 'center', md: 'justify' }}>
               {/* Personal intro extracted from CV */}
-              Hi! I'm Adnaan, a pre-final year Computer Engineering undergraduate
+              Hi! I'm Adnaan, a final year Computer Engineering undergraduate
               at Zakir Hussain College of Engineering and Technology, Aligarh Muslim University.
               I thrive on engaging with captivating projects that not only challenge
               my knowledge but also introduce me to the dynamic and transformative
-              technologies shaping our world. My constant pursuit is to discover
-              improved, ethically sound, and inclusive solutions to the everyday
-              challenges we encounter.
+              technologies shaping our world. 
             </Body>
             <Box>
               <Heading3>What I've been up to:</Heading3>
@@ -207,8 +205,9 @@ const About = () => {
               <Heading3>Internships and Experiences</Heading3>
               <Stack as="ul">
                 {/* Internship details extracted from CV */}
-                <Bullet as="li">Upcoming Graduate Research Intern - McGill University</Bullet>
+                <Bullet as="li">Graduate Research Intern - McGill University</Bullet>
                 <Bullet as="li">Research Intern - Christian-Albrechts-Universität zu Kiel</Bullet>
+                <Bullet as="li">Full Stack Developer Intern - TeleCRM</Bullet>
                 <Bullet as="li">Summer Research Intern - National Remote Sensing Center, ISRO</Bullet>
                 <Bullet as="li">Data Scrapping Intern - Capped.in Fintech Private Limited</Bullet>
               </Stack>
@@ -218,7 +217,8 @@ const About = () => {
               <Heading3>Volunteering and Positions</Heading3>
               <Stack as="ul">
                 {/* Volunteering details extracted from CV */}
-                <Bullet as="li">Vice Secretary - IEEE Students Branch A.M.U</Bullet>
+                <Bullet as="li">Research & Development Lead - IEEE CS Society A.M.U</Bullet>
+                <Bullet as="li">Secretary - IEEE Students Branch A.M.U</Bullet>
                 <Bullet as="li">Treasurer - A.C.M Association for Computer Machinery</Bullet>
                 <Bullet as="li">Web Developer - A.M.U Machine Learning Club</Bullet>
               </Stack>
@@ -228,8 +228,10 @@ const About = () => {
               <Heading3>Awards & Honors</Heading3>
               <Stack as="ul">
                 {/* Awards & Honors details extracted from CV */}
+                <Bullet as="li">Sir Syed Global Scholar Award 2024</Bullet>
+                <Bullet as="li">Linux Foundation Training (LiFT) Scholarship for 2024</Bullet>
                 <Bullet as="li">DAAD WISE Scholar 2024 - 3 months internship at University of Kiel, Germany</Bullet>
-                <Bullet as="li">ONGC Scholar, India - Awardee for scholarships awarded to meritorious students</Bullet>
+                <Bullet as="li">Oil and Natural Gas Corporation(ONGC) Scholar, India - Awardee for scholarships awarded to meritorious students</Bullet>
                 <Bullet as="li">Islamic Development Bank Scholarship, Saudi Arabia - For academic excellence</Bullet>
                 <Bullet as="li">Lead Ignite Transform Scholar, Dubai - Based on merit by AMU Old Boys Association</Bullet>
                 <Bullet as="li">University Merit Scholarship, AMU - Top performer (Gold Medalist) in freshman year</Bullet>
