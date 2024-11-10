@@ -14,10 +14,12 @@ import {
   Grow,
   Echo,
   CovidProject,
+  CyberSight,
   //AINavigation,
-  Sight
+  Sight,
 } from "../assets/projects";
 import ProjectImage from "../components/miscellaneous/ProjectImage"
+import SequentialImages from "./SequentialImages";
 const ProjectsList = [
   {
     name: "Portfolio Website",
@@ -41,7 +43,8 @@ const ProjectsList = [
       "Achieved a compact, fully functional prototype (under 160 MB, iOS 14+) for bus shelter, door, and crosswalk detection",
       "This is just an initial prototype, and the final product is under Non Disclosure Agreement(NDA).",
     ],
-    media: <ProjectImage src={Sight} type="gif" />,
+    media: <SequentialImages firstImage={Sight} secondImage={CyberSight} firstImageDuration={4000} secondImageDuration={22000} />,
+    live: "https://youtube.com/shorts/tjjbdm7UCZ8",
     live: "https://youtube.com/shorts/tjjbdm7UCZ8",
     repo: "https://github.com/Shared-Reality-Lab/cybersight/tree/sight",
   },
@@ -52,7 +55,28 @@ const ProjectsList = [
       "An app for returning the DAC of the current and marked location of the user on the Indian Map along with building Contours",
       "Uses React-native, Postgres ,Node and PhP",
     ],
-    media: <ProjectImage src={DAC} type="gif" />,
+   media: (
+        <div style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",  // Adjust the width of the container
+            height: "auto",
+            overflow: "hidden", // Hide overflow content (black borders)
+            position: "relative",
+        }}>
+            <ProjectImage 
+                src={DAC} 
+                type="gif" 
+                style={{
+                    objectFit: "cover",  // Ensures content fills the container and crops excess
+                    objectPosition: "center",  // Centers the GIF content
+                    width: "100%",  // Ensures it takes the full width of the container
+                    height: "auto",  // Preserves aspect ratio
+                }} 
+            />
+        </div>
+    ),
     live: null,
     repo: "https://github.com/mohd-adnaan/DAC",
   },
@@ -64,7 +88,7 @@ const ProjectsList = [
       "The technology stack employed includes React Native, JavaScript,Firestore, TensorFlow, QGIS, MySql database, Node.js, Express, PHP, Java, and Python",
       "My Minor Project for 3rd Year Computer Engineering",
     ],
-    media: <ProjectImage src={Grow} type="gif" />,
+    media: <ProjectImage src={Grow} type="gif" style={{ maxWidth: "300px", maxHeight: "900px" }} />,
     live: null,
     repo: "https://github.com/mohd-adnaan/Grow",
   },
@@ -76,7 +100,8 @@ const ProjectsList = [
       "Website visits: 100k +",
     ],
     media: <ProjectImage src={CovidProject} alt="Covid Resources Project" />,
-    live: "https://multicode-phi.vercel.app"
+    live: "https://covid-resources-chi.vercel.app",
+    repo : null,
   },
   {
     name: "Tech-Quizzes",
@@ -90,17 +115,7 @@ const ProjectsList = [
     repo: "https://github.com/mohd-adnaan/Tech-Quizzes",
   },
  
-   {
-     name: "ParkEaze",
-     info: [
-       "A Machine Learning Project for detecting available parking slots in real time.",
-       "Jupyter NoteBook",
-       "OpenCV",
-     ],
-     media: <ProjectImage src={ParkEaze} type="gif" />,
-     live: null,
-     repo: "https://github.com/mohd-adnaan/ParkEaze",
-   },
+ 
    {
     name: "Echo Music Player",
     info: [
@@ -113,6 +128,17 @@ const ProjectsList = [
     live: null,
     repo: null,
   }, 
+  {
+    name: "ParkEaze",
+    info: [
+      "A Machine Learning Project for detecting available parking slots in real time.",
+      "Jupyter NoteBook",
+      "OpenCV",
+    ],
+    media: <ProjectImage src={ParkEaze} type="gif" />,
+    live: null,
+    repo: "https://github.com/mohd-adnaan/ParkEaze",
+  },
   {
     name: "SegFormer For Semantic Segmentation",
     info: [

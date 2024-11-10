@@ -109,7 +109,7 @@ const Homepage = () => {
                </br>
               <PrimaryButton
                 as="a"
-                href="mailto:iamadnaanmohd21@gmail.com"
+                href="mailto:mohammadadnan@zhcet.ac.in"
                 theme={secondary}
                 mt={4}
               >

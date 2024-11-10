@@ -14,3 +14,5 @@ export { default as Grow } from "./Grow.gif";
 export { default as Echo } from "./Echo.gif";
 export { default as CovidProject} from "./CovidProject.jpeg";
 export { default as Sight } from "./Sight.gif";
+export { default as CyberSight} from "./CyberSightProject.gif"
+export { default as Sight_CyberSight } from "./Sight_CyberSight.gif"
