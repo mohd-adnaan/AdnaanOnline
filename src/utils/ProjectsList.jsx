@@ -3,7 +3,6 @@ import {
   PortfolioProject,
   TechQuizzes,
   DAC,
-  MapIn,
   TTT,
   ParkEaze,
   DataBird,
@@ -14,11 +13,9 @@ import {
   Grow,
   Echo,
   CovidProject,
-  CyberSight,
-  Sight,
+  SightXCyberSight,
 } from "../assets/projects";
 import ProjectImage from "../components/miscellaneous/ProjectImage"
-import SequentialImages from "./SequentialImages";
 const ProjectsList = [
   {
     name: "Portfolio Website",
@@ -42,8 +39,7 @@ const ProjectsList = [
       "Achieved a compact, fully functional prototype (under 160 MB, iOS 14+) for bus shelter, door, and crosswalk detection",
       "This is just an initial prototype, and the final product is under Non Disclosure Agreement(NDA).",
     ],
-    media: <SequentialImages firstImage={Sight} secondImage={CyberSight} firstImageDuration={4000} secondImageDuration={22000} />,
-    live: "https://youtube.com/shorts/tjjbdm7UCZ8",
+    media: <ProjectImage src={SightXCyberSight} type="gif" style={{ maxWidth: "300px", maxHeight: "900px" }} />,
     live: "https://youtube.com/shorts/tjjbdm7UCZ8",
     repo: "https://github.com/Shared-Reality-Lab/cybersight/tree/sight",
   },
@@ -54,28 +50,7 @@ const ProjectsList = [
       "An app for returning the DAC of the current and marked location of the user on the Indian Map along with building Contours",
       "Uses React-native, Postgres ,Node and PhP",
     ],
-   media: (
-        <div style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",  // Adjust the width of the container
-            height: "auto",
-            overflow: "hidden", // Hide overflow content (black borders)
-            position: "relative",
-        }}>
-            <ProjectImage 
-                src={DAC} 
-                type="gif" 
-                style={{
-                    objectFit: "cover",  // Ensures content fills the container and crops excess
-                    objectPosition: "center",  // Centers the GIF content
-                    width: "100%",  // Ensures it takes the full width of the container
-                    height: "auto",  // Preserves aspect ratio
-                }} 
-            />
-        </div>
-    ),
+    media: <ProjectImage src={DAC} type="gif" style={{ maxWidth: "220px", maxHeight: "1000px" }}/>,
     live: null,
     repo: "https://github.com/mohd-adnaan/DAC",
   },
@@ -169,23 +144,22 @@ const ProjectsList = [
       "Uses React-native,Java-Script, Java,C++,Objective C++ , Postgres, and PhP",
       "Design and Develop by NRSC,ISRO,India as a Reseach & Mobile Developer Intern."
     ],
-    media: <ProjectImage src={Kisaan} type="gif" />,
+    media: <ProjectImage src={Kisaan} type="gif" style={{ maxWidth: "300px", maxHeight: "900px" }} />,
     //live : "https://docs.google.com/document/d/1tPbji7SMzDDeHS1U0BJB22zcux5G5zOtqoGtUfCgxmc/edit?usp=sharing",
     live: null,
     repo: "https://github.com/mohd-adnaan/Kisaan",
   },
-   {
-    name: "MapIn",
-    info: [
-      "An app for Marking and drawing shapes on a location of the Indian Map.",
-      "Uses React-native,Java-Script, Java,C++,Objective C++ , Postgres, and PhP",
-    ],
-    media: <ProjectImage src={MapIn} type="gif" />,
-    //live : "https://docs.google.com/document/d/1tPbji7SMzDDeHS1U0BJB22zcux5G5zOtqoGtUfCgxmc/edit?usp=sharing",
-    live: null,
-    repo: "https://github.com/mohd-adnaan/Map_In",
-  },
-   
+  //  {
+  //   name: "MapIn",
+  //   info: [
+  //     "An app for Marking and drawing shapes on a location of the Indian Map.",
+  //     "Uses React-native,Java-Script, Java,C++,Objective C++ , Postgres, and PhP",
+  //   ],
+  //   media: <ProjectImage src={MapIn} type="gif" style={{ maxWidth: "200px", maxHeight: "1000px" }}/>,
+  //   //live : "https://docs.google.com/document/d/1tPbji7SMzDDeHS1U0BJB22zcux5G5zOtqoGtUfCgxmc/edit?usp=sharing",
+  //   live: null,
+  //   repo: "https://github.com/mohd-adnaan/Map_In",
+  // }, 
   {
     name: "AI-Tic-Tac-Toe",
     info: [
