@@ -15,7 +15,6 @@ import {
   Echo,
   CovidProject,
   CyberSight,
-  //AINavigation,
   Sight,
 } from "../assets/projects";
 import ProjectImage from "../components/miscellaneous/ProjectImage"
