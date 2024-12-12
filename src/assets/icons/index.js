@@ -22,3 +22,7 @@ export { default as IconSQL} from "./IconSQL.png";
 export { default as IconPHP } from "./IconPHP.png";
 export { default as IconJupyterNotebook } from "./IconJupyterNotebook.png";
 export { default as IconCodeforces} from "./IconCodeforces.png";
+export { default as IconTypeScript} from "./IconTypeScript.png";
+export { default as IconAngular} from "./IconAngular.png"
+export { default as IconSwift} from "./IconSwift.png"
+export { default as IconAWS} from "./IconAWS.png"

@@ -23,6 +23,10 @@ import {
   IconSQL,
   IconPostman,
   IconJupyterNotebook,
+  IconAWS,
+  IconAngular,
+  IconSwift,
+  IconTypeScript,
 } from "../assets/icons";
 
 const Skills = ({ ...props }) => {
@@ -98,6 +102,11 @@ const Languages = () => {
         name="Java"
         size={{ base: "3em", xl: "5.5em" }}
       />}
+      {<IconBox
+        icon={IconTypeScript}
+        name="TypeScript"
+        size={{ base: "3em", xl: "5.5em" }}
+      />}
     </>
   );
 };
@@ -114,6 +123,11 @@ const Frameworks = () => {
         name="React"
         size={{ base: "3em", xl: "5.5em" }}
       />
+       <IconBox
+        icon={IconAngular}
+        name="Angular"
+        size={{ base: "3em", xl: "5.5em" }}
+      />
       <IconBox
         icon={IconAndroid}
         name="Android"
@@ -124,6 +138,12 @@ const Frameworks = () => {
         name="React-Native"
         size={{ base: "3em", xl: "5.5em" }}
       />}
+      {<IconBox
+        icon={IconSwift}
+        name="Swift"
+        size={{ base: "3em", xl: "5.5em" }}
+      />}
+
     </>
   );
 };
@@ -149,6 +169,11 @@ const Tools = () => {
       {<IconBox
         icon={IconPHP}
         name="PHP"
+        size={{ base: "3em", xl: "5.5em" }}
+      />}
+      {<IconBox
+        icon={IconAWS}
+        name="AWS"
         size={{ base: "3em", xl: "5.5em" }}
       />}
     </>

@@ -81,18 +81,18 @@ const About = () => {
               <Stack as="ul">
                 {/* Education details extracted from CV */}
                 <Bullet as="li">Bachelors of Technology in Computer Engineering - Aligarh Muslim University, CPI: 9.118</Bullet>
-                <Bullet as="li">Senior Secondary, R.K.P.S, XII Grade: 95.4% </Bullet>
-                <Bullet as="li">High School, R.K.P.S, X Grade: 93.4%</Bullet>
+                <Bullet as="li">Senior Secondary HighSchool(XII Class), Radha Krishna Public Sr. Sec School, Grade: 95.4% </Bullet>
+                <Bullet as="li">HighSchool(X Class), Radha Krishna Public Sr. Sec School, Grade: 93.4%</Bullet>
               </Stack>
             </Box>
             {/* Internship Section */}
             <Box>
               <Heading3>Internships and Experiences</Heading3>
               <Stack as="ul">
-                {/* Internship details extracted from CV */}
+                {/* Internship details extracted from CV 
+                                 <Bullet as="li">Full Stack Developer Intern - TeleCRM</Bullet>*/}
                 <Bullet as="li">Graduate Research Intern - McGill University</Bullet>
                 <Bullet as="li">Research Intern - Christian-Albrechts-Universität zu Kiel</Bullet>
-                <Bullet as="li">Full Stack Developer Intern - TeleCRM</Bullet>
                 <Bullet as="li">Summer Research Intern - National Remote Sensing Center, ISRO</Bullet>
                 <Bullet as="li">Data Scrapping Intern - Capped.in Fintech Private Limited</Bullet>
               </Stack>
@@ -105,7 +105,7 @@ const About = () => {
                 <Bullet as="li">Research & Development Lead - IEEE CS Society A.M.U</Bullet>
                 <Bullet as="li">Secretary - IEEE Students Branch A.M.U</Bullet>
                 <Bullet as="li">Treasurer - A.C.M Association for Computer Machinery</Bullet>
-                <Bullet as="li">Web Developer - A.M.U Machine Learning Club</Bullet>
+                <Bullet as="li">Web Developer & ML Lead - A.M.U Machine Learning Club</Bullet>
               </Stack>
             </Box>
             {/* Awards & Honors Section */}
@@ -113,19 +113,17 @@ const About = () => {
               <Heading3>Awards & Honors</Heading3>
               <Stack as="ul">
                 {/* Awards & Honors details extracted from CV */}
-                <Bullet as="li">Sir Syed Global Scholar Award 2024</Bullet>
-                <Bullet as="li">Linux Foundation Training (LiFT) Scholarship for 2024</Bullet>
-                <Bullet as="li">DAAD WISE Scholar 2024 - 3 months internship at University of Kiel, Germany</Bullet>
-                <Bullet as="li">Oil and Natural Gas Corporation(ONGC) Scholar, India - Awardee for scholarships awarded to meritorious students</Bullet>
-                <Bullet as="li">Islamic Development Bank Scholarship, Saudi Arabia - For academic excellence</Bullet>
-                <Bullet as="li">Lead Ignite Transform Scholar, Dubai - Based on merit by AMU Old Boys Association</Bullet>
-                <Bullet as="li">University Merit Scholarship, AMU - Top performer (Gold Medalist) in freshman year</Bullet>
+                <Bullet as="li">Sir Syed Global Scholar Award (<strong>SSGSA</strong>) 2024</Bullet>
+                <Bullet as="li">Linux Foundation Training (<strong>LiFT</strong>) Scholarship for 2024</Bullet>
+                <Bullet as="li">DAAD WISE Scholar 2024 - 3 months Internship at University of Kiel, Germany</Bullet>
+                <Bullet as="li">Oil and Natural Gas Corporation(<strong>ONGC</strong>) Scholar, India - Awardee for scholarships awarded to meritorious students</Bullet>
+                <Bullet as="li">Islamic Development Bank Scholarship(<strong>IsDB</strong>), Saudi Arabia - For academic excellence</Bullet>
+                <Bullet as="li">Lead Ignite Transform(<strong>LIT</strong>) Scholar, Dubai - Based on merit by AMU Old Boys Association</Bullet>
+                <Bullet as="li">University Merit Scholarship, AMU - Top performer (<strong>Gold Medalist</strong>) in freshman year</Bullet>
               </Stack>
             </Box>
           </Stack>
         </Stack>
-
-
       </Box>
     </motion.div>
   );

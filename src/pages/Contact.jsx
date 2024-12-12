@@ -50,7 +50,7 @@ const Contact = ({ ...props }) => {
         >
           <TextLarge mb="32px" align="center">
             I'm currently open to learning and actively looking for full-time
-            Internship & job  opportunties, so if you like what you've seen please don't
+            Internship & job  opportunities, so if you like what you've seen please don't
             hesitate to get in touch!
           </TextLarge>
           <TextLarge mb="64px" align="center">
@@ -72,7 +72,7 @@ const Contact = ({ ...props }) => {
             </PrimaryButton>
             <PrimaryButton
               as="a"
-              href="https://drive.google.com/file/d/1M7D9ViCB32xLirxyTd09W8aTp6260M5K/view?usp=sharing"
+              href="https://drive.google.com/file/d/1KfEC2bY1ySlPrl-5K5bvH4jJrcT1SKTr/view?usp=sharing"
               theme={secondary}
               mt={4}
               target="_blank"
@@ -113,7 +113,7 @@ const Contact = ({ ...props }) => {
           />
           <IconBox
             icon={IconLeetcode}
-            link="https://leetcode.com/Mohd_Adnaan/"
+            link="https://leetcode.com/u/adnaaan/"
             size="3em"
             name="Leetcode"
           />
