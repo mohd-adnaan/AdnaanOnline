@@ -16,7 +16,7 @@ export { default as IconLeetcode } from "./IconLeetcode.webp";
 export { default as IconOpenCV } from "./IconOpenCV.png";
 export { default as IconJava } from "./IconJava.png";
 export { default as IconAndroid } from "./IconAndroid.jpeg";
-export { default as IconTwitter} from "./twitter.jpeg";
+export { default as IconTwitter} from "./IconTwitter.png";
 export { default as IconYolo } from "./IconYolo.png";
 export { default as IconSQL} from "./IconSQL.png";
 export { default as IconPHP } from "./IconPHP.png";

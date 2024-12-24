@@ -85,10 +85,11 @@ const Contact = ({ ...props }) => {
           mt="3em"
           mx="auto"
           w={{ base: "100%", lg: "70%" }}
-          templateColumns={{
-            base: "repeat(2, 1fr)",
-            xl: "repeat(3, 1fr)",
-          }}
+          // templateColumns={{
+          //   base: "repeat(2, 1fr)",
+          //   xl: "repeat(3, 1fr)",
+          // }}
+          templateColumns="repeat(4, 1fr)"
           gap={{ base: 8 }}
           placeItems="center"
           pb="3em"
@@ -96,39 +97,39 @@ const Contact = ({ ...props }) => {
           <IconBox
             icon={IconLinkedin}
             link="https://www.linkedin.com/in/mohammad-adnaan-51272024a/"
-            size="3em"
+            size="4em"
             name="Linkedin"
           />
           <IconBox
             icon={IconGithub}
             link="https://github.com/mohd-adnaan"
-            size="3em"
+            size="4em"
             name="Github"
           />
           <IconBox
           icon={IconTwitter}
           link="https://twitter.com/callmeadnaan19"
-          size="3em"
+          size="4em"
           name="Twitter"
           />
           <IconBox
             icon={IconLeetcode}
             link="https://leetcode.com/u/adnaaan/"
-            size="3em"
+            size="4em"
             name="Leetcode"
           />
-          <IconBox
+          {/* <IconBox
             icon={IconInstagram}
             link="https://www.instagram.com/adnaan.this.side/"
             size="3em"
             name="Instagram"
-          />
-          <IconBox
+          /> */}
+          {/* <IconBox
             icon={IconCodeforces}
             link="https://codeforces.com/profile/adnaanonline#"
             size="3em"
             name="Codeforces"
-          />
+          /> */}
         </Grid>
       </Box>
     </motion.div>

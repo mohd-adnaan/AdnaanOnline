@@ -45,13 +45,13 @@ const Homepage = () => {
   const { colorDark, secondary } = useColorSwitcher();
   const { text: animatedText, isErasing } = useTextAnimation([
     'Full-Stack App Developer',
-    'ML & DL Enthusiast',
+    'ML & Data Science Enthusiast',
     'Computer Engineering Major at AMU'
   ], 150, 75, 2000);
   const placeholderStyle = {
     display: 'inline-block', 
     height: '8vh', 
-    width: '8vh', // Assuming the width is similar to the height for the symbol
+    width: '8vh', 
     visibility: 'hidden'
   };
   return (

@@ -71,7 +71,7 @@ const About = () => {
               <Heading3>What I've been up to:</Heading3>
                <Stack as="ul">
                  <Bullet as="li">My interest is in making machines understand and perform tasks as we humans do.</Bullet>
-                 <Bullet as="li">I have applied knowledge of Machine Learning, Deep Learning and Image Processing.</Bullet>
+                 <Bullet as="li">I have applied knowledge of Machine Learning, Data Science and Image Processing.</Bullet>
                 <Bullet as="li">Plays Guitar with Gluten & Lactose Intolerance and likes Reading.</Bullet>
                </Stack>
              </Box>
