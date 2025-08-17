@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Box, Flex, Grid } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import SectionHeader from "../components/miscellaneous/SectionHeader";
 import { PrimaryButton } from "../components/Buttons";
 import { Heading2, TextLarge } from "../components/Typography";
@@ -10,6 +10,7 @@ import {
   IconLeetcode,
   IconLinkedin,
   IconTwitter,
+  IconInstagram,
 } from "../assets/icons";
 
 import useColorSwitcher from "../utils/useColorSwitcher";
@@ -76,56 +77,60 @@ const Contact = ({ ...props }) => {
             </PrimaryButton>
           </Flex>
         </Box>
-        <Grid
+        <Box
           mt="3em"
           mx="auto"
           w={{ base: "100%", lg: "70%" }}
-          // templateColumns={{
-          //   base: "repeat(2, 1fr)",
-          //   xl: "repeat(3, 1fr)",
-          // }}
-          templateColumns="repeat(4, 1fr)"
-          gap={{ base: 8 }}
-          placeItems="center"
           pb="3em"
         >
-          <IconBox
-            icon={IconLinkedin}
-            link="https://www.linkedin.com/in/mohammad-adnaan-51272024a/"
-            size="4em"
-            name="Linkedin"
-          />
-          <IconBox
-            icon={IconGithub}
-            link="https://github.com/mohd-adnaan"
-            size="4em"
-            name="Github"
-          />
-          <IconBox
-            icon={IconTwitter}
-            link="https://twitter.com/callmeadnaan19"
-            size="4em"
-            name="Twitter"
-          />
-          <IconBox
-            icon={IconLeetcode}
-            link="https://leetcode.com/u/adnaaan/"
-            size="4em"
-            name="Leetcode"
-          />
-          {/* <IconBox
-            icon={IconInstagram}
-            link="https://www.instagram.com/adnaan.this.side/"
-            size="3em"
-            name="Instagram"
-          /> */}
-          {/* <IconBox
-            icon={IconCodeforces}
-            link="https://codeforces.com/profile/adnaanonline#"
-            size="3em"
-            name="Codeforces"
-          /> */}
-        </Grid>
+          {/* First row - 3 icons */}
+          <Flex
+            justifyContent="space-evenly"
+            alignItems="center"
+            mb={{ base: 6, md: 8 }}
+            wrap="nowrap"
+            gap={{ base: 4, md: 8 }}
+          >
+            <IconBox
+              icon={IconLinkedin}
+              link="https://www.linkedin.com/in/mohammad-adnaan-51272024a/"
+              size="4em"
+              name="Linkedin"
+            />
+            <IconBox
+              icon={IconGithub}
+              link="https://github.com/mohd-adnaan"
+              size="4em"
+              name="Github"
+            />
+            <IconBox
+              icon={IconTwitter}
+              link="https://twitter.com/callmeadnaan19"
+              size="4em"
+              name="Twitter"
+            />
+          </Flex>
+
+          {/* Second row - 2 icons centered */}
+          <Flex
+            justifyContent="center"
+            alignItems="center"
+            gap={{ base: 12, md: 16, lg: 20 }}
+          >
+            <IconBox
+              icon={IconInstagram}
+              link="https://www.instagram.com/adnaan.this.side/"
+              size="4em"
+              name="Instagram"
+            />
+            <IconBox
+              icon={IconLeetcode}
+              link="https://leetcode.com/u/adnaaan/"
+              size="4em"
+              name="Leetcode"
+            />
+          </Flex>
+        </Box>
       </Box>
     </motion.div>
   );

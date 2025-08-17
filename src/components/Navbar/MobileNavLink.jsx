@@ -20,7 +20,7 @@ const MobileNavLink = ({ name, link, onClick }) => {
         to={`/${link}`}
         variant="ghost"
         fontWeight="600"
-        fontSize="lg"
+        fontSize="xl"
         color={isActive ? "white" : textColor}
         bg={isActive ? secondary : "transparent"}
         w="100%"

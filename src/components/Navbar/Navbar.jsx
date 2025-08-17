@@ -95,16 +95,26 @@ const Navbar = (props) => {
 
         {/* Dark/Light toggle - Right side */}
         <IconButton
-          fontSize="xl"
+          fontSize="3xl"
+          size="xl"
           aria-label={`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`}
-          variant="ghost"
+          variant="unstyled"
           color="current"
           onClick={toggleColorMode}
           icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
           mr={4}
-          borderRadius="full"
+          p={2}
           _hover={{
-            bg: useColorModeValue("gray.100", "gray.700")
+            transform: "scale(1.1)",
+            color: useColorModeValue("gray.600", "gray.300")
+          }}
+          _focus={{
+            boxShadow: "none",
+            outline: "none"
+          }}
+          _active={{
+            transform: "scale(0.95)",
+            bg: "transparent"
           }}
           transition="all 0.2s ease"
           zIndex={1}

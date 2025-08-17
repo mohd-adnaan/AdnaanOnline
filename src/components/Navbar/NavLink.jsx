@@ -17,7 +17,7 @@ export const NavLink = ({ name, link, ...props }) => {
         as={Link}
         to={`/${link}`}
         variant="ghost"
-        fontSize="xl"
+        fontSize={{ base: "lg", md: "md" }}
         fontWeight="600"
         px={6}
         py={3}

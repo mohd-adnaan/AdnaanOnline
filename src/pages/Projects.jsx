@@ -1,7 +1,7 @@
 import React from "react";
 
 import { motion } from "framer-motion";
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
 
 import SectionHeader from "../components/miscellaneous/SectionHeader";
 import ProjectsList from "../utils/ProjectsList";
@@ -10,6 +10,9 @@ import { ProjectCard, ProjectInfoCard } from "../components/ProjectCard";
 import { Heading2 } from "../components/Typography/index";
 
 const Projects = ({ ...props }) => {
+  const borderColor = useColorModeValue("gray.300", "gray.500");
+  const hoverBorderColor = useColorModeValue("gray.400", "gray.400");
+
   return (
     <motion.div
       initial={{ y: "100%", opacity: 0 }}
@@ -37,14 +40,21 @@ const Projects = ({ ...props }) => {
             mx="auto"
             flexDirection={{ base: "column", xl: "row" }}
             w="100%"
-            p={{ md: "2em", lg: "3em" }}
+            p={{ base: "1.5em", md: "2em", lg: "3em" }}
             rounded="8px"
             key={id}
-            boxShadow={{ md: "0 0 0 2px" }}
+            border="2px solid"
+            borderColor={borderColor}
             alignItems={{ base: "center", xl: "unset" }}
             justify="left"
             spacing={4}
             mb="100px"
+            _hover={{
+              borderColor: hoverBorderColor,
+              transform: "translateY(-2px)",
+              boxShadow: "lg"
+            }}
+            transition="all 0.3s ease"
           >
             <ProjectCard media={project.media} w="100%" />
             <ProjectInfoCard length={project.length} {...project} />

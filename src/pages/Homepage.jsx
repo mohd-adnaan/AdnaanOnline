@@ -73,7 +73,7 @@ const Homepage = () => {
     >
       <Box
         as="div"
-        mt={{ base: "4em", md: "8em" }}
+        mt={{ base: "2em", md: "8em" }}
         px={{ base: "0", md: "20", xl: "0" }}
       >
         <Flex justifyContent="center">
@@ -81,13 +81,13 @@ const Homepage = () => {
             <Flex
               flexDir="column"
               justifyContent="space-around"
-              h={{ base: "600", lg: "500" }}
+              h={{ base: "480", lg: "500" }}
               alignItems={{ sm: "center", lg: "flex-start" }}
             >
               <Text
                 color={colorDark}
                 fontFamily="Space Mono, monospace"
-                fontSize={{ base: "24px", md: "32px" }}
+                fontSize={{ base: "18px", md: "32px" }}
                 fontWeight="bold"
                 textAlign={{ base: "center", md: "left" }}
               >
@@ -125,12 +125,12 @@ const Homepage = () => {
                 as={Heading3} 
                 big={true} 
                 color={secondary} 
-                minHeight={{ base: "4em", md: "3em" }}
+                minHeight={{ base: "3em", md: "3em" }}
                 display="flex"
                 alignItems="center"
                 justifyContent={{ base: "center", md: "flex-start" }}
                 textAlign={{ base: "center", md: "left" }}
-                mb={{ base: "2", md: "4" }}
+                mb={{ base: "1", md: "4" }}
               >
                 {animatedText}
               </Box>
@@ -138,21 +138,24 @@ const Homepage = () => {
               <Body
                 w={{ base: "90%", xl: "40%" }}
                 fontWeight="bold"
-                mb={{ base: "8", md: "8" }}
+                mb={{ base: "4", md: "8" }}
                 mx={{ base: "auto", md: "0" }}
                 textAlign={{ base: "center", md: "left" }}
-                mt={{ base: "4", md: "0" }}
+                mt={{ base: "2", md: "0" }}
+                fontSize={{ base: "sm", md: "md" }}
               >
                 A curiosity-driven coder with a passion for developing inclusive mobile & 
                 web experiences empowered with AI and ML. Enthusiastic about learning and applying skills to new projects.
               </Body>
 
-              <Box textAlign={{ base: "center", md: "left" }} w="100%">
+              <Box textAlign={{ base: "center", md: "left" }} w="100%" mt={{ base: "2", md: "4" }}>
                 <PrimaryButton
                   as="a"
                   href="mailto:mohammadadnan@zhcet.ac.in"
                   theme={secondary}
-                  mt={4}
+                  w={{ base: "160px", md: "180px" }}
+                  h={{ base: "44px", md: "52px" }}
+                  fontSize={{ base: "sm", md: "md" }}
                 >
                   GET IN TOUCH
                 </PrimaryButton>

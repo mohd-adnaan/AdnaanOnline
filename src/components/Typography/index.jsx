@@ -6,9 +6,9 @@ export const Heading1 = ({ children, ...props }) => {
     <Heading
       {...props}
       as="h1"
-      py={{ base: "0.25em", md: "0.50em" }}
-      fontSize={{ sm: "3em", md: "5em", lg: "6em" }}
-      lineHeight={{ base: "1.1em", md: "0.9em" }}
+      py={{ base: "0.15em", md: "0.50em" }}
+      fontSize={{ base: "2.5em", sm: "3em", md: "5em", lg: "6em" }}
+      lineHeight={{ base: "1.0em", md: "0.9em" }}
     >
       {children}
     </Heading>
@@ -30,7 +30,7 @@ export const Heading2 = ({ children, ...props }) => {
 export const Heading3 = ({ big = false, color, children, ...props }) => {
   let fontSize;
   if (big) {
-    fontSize = { base: "1.25em", sm: "2em", md: "2.5em" };
+    fontSize = { base: "1.1em", sm: "1.8em", md: "2.5em" };
   } else {
     fontSize = { base: "1.25em", sm: "1.5em", lg: "1.5em" };
   }
@@ -43,7 +43,7 @@ export const Heading3 = ({ big = false, color, children, ...props }) => {
       fontSize={fontSize}
       fontWeight="bold"
       lineHeight="1.2em"
-      my={{ base: "4", md: "8px" }}
+      my={{ base: "2", md: "8px" }}
       textAlign={{ base: "center", md: "left" }}
     >
       {children}
