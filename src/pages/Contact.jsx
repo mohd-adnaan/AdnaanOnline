@@ -60,7 +60,7 @@ const Contact = ({ ...props }) => {
           >
             <PrimaryButton
               as="a"
-              href="mailto:mohammadadnan@zhcet.ac.in"
+              href="mailto:iamadnaanmohd@gmail.com"
               theme={secondary}
               mt={4}
             >
@@ -68,7 +68,7 @@ const Contact = ({ ...props }) => {
             </PrimaryButton>
             <PrimaryButton
               as="a"
-              href="https://drive.google.com/file/d/1HmlMvpEg00qkBqenuuSEFjbwU7iCiebX/view?usp=sharing"
+              href="https://drive.google.com/file/d/1SZpQd-9sZf8lnWbIs-eWFEwQ_5pOrrUP/view?usp=sharing"
               theme={secondary}
               mt={4}
               target="_blank"

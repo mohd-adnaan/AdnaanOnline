@@ -8,13 +8,13 @@ import {
   DataBird,
   Kisaan,
   FloatingPiano,
-  Diabetic_Blindness_Detection,
   ImageSegmentation,
   Grow,
   Echo,
   CovidProject,
   SightXCyberSight,
   HashmiDawakhana,
+  gloveguide
 } from "../assets/projects";
 import ProjectImage from "../components/miscellaneous/ProjectImage"
 const ProjectsList = [
@@ -40,20 +40,29 @@ const ProjectsList = [
     live: "https://adnaanonline.vercel.app/",
     repo: "https://github.com/mohd-adnaan/AdnaanOnline",
   },
+    {
+    name:"GloveGuide",
+    info:
+    [
+    "Glove Guide is a wearable navigation system for cyclists, runners, and pedestrians that uses vibration feedback to provide turn-by-turn directions, no screens or sounds required.",
+    "By integrating small motors into gloves and connecting them via Bluetooth to a mobile app using Google Maps API, users can focus on the road while navigating safely.",
+    "Group Project for the Human Computer Interaction Course ECSE-542 at McGill University By Mohammad Adnaan, Kevin Wu, and William Goyens.",
+    ],
+    media: <ProjectImage src={gloveguide} type="gif" style={{ maxWidth: "300px", maxHeight: "900px" }} />,
+    live: "https://mohd-adnaan.github.io/gloveguide/",
+    repo: "https://github.com/mohd-adnaan/gga",
+  },
+
   {
     name: "Sight",
     info: [
-      // "Worked as a MITACS Graduate Research Intern at McGill University for 12 weeks, Canada, under Professor Jeremy Cooperstock on “Autonomous Navigation Assistance for the Visually Impaired” in Shared Reality Lab, McConnell Engineering ",
-      // "I was scrum master for the project carrying out the Research, Data gathering and cleansing, custom model training and interesting the model to develop an iOS application for assistance to the blind individuals for the detection and safe navigation to Bus Shelters, Door and Intersection Crossways. Added the CyberSight and advance the research by adding functional of one shot object detection, Text Detection,Optical Reading functionality and text to speech conversion.",
-      // "And all these functionality in under 160 MB iOS application with minimum support of iOS 14.", 
-      "Completed a 12-week MITACS Graduate Research Internship at McGill University's Shared Reality Lab, under Professor Jeremy Cooperstock",
-      "Focused on developing an iOS app for autonomous navigation assistance for the visually impaired.",
+      "Completed a 12-week MITACS Graduate Research Internship at McGill University's Shared Reality Lab, under Professor Jeremy Cooperstock.Focused on developing an iOS app for autonomous navigation assistance for the visually impaired.",
       "Led the project as Scrum Master, conducting research, data gathering, model training, and integrating features like object detection, text detection, OCR, and text-to-speech",
       "Achieved a compact, fully functional prototype (under 160 MB, iOS 14+) for bus shelter, door, and crosswalk detection",
       "This is just an initial prototype, and the final product is under Non Disclosure Agreement(NDA).",
     ],
     media: <ProjectImage src={SightXCyberSight} type="gif" style={{ maxWidth: "300px", maxHeight: "900px" }} />,
-    live: "https://youtube.com/shorts/tjjbdm7UCZ8",
+    live: "https://drive.google.com/drive/folders/1taXRnL1CQlBS2XNv9NQp_jW_KGETnhps",
     repo: "https://github.com/Shared-Reality-Lab/cybersight/tree/sight",
   },
   {
@@ -184,17 +193,6 @@ const ProjectsList = [
     repo: "https://github.com/mohd-adnaan/AI-Tic-Tac-Toe",
   },
 
-  {
-    name:"Diabetic Blindness Detection",
-    info:
-    [
-    "Diabetic Retinopathy is an eye-condition developed in patients with diabetics that gradually turn into blindness.",
-    "This is a code implementation of the paper - 'Diabetic Retinopathy Detection using Texture Features and Ensemble Learning.' " ,
-    ],
-    media: <ProjectImage src={Diabetic_Blindness_Detection} type=".jpeg" style={{ maxWidth: "100%", maxHeight: "100%" }}  />,
-    live: "https://doi.org/10.1109/TENSYMP50017.2020.9230600",
-    repo: "https://github.com/mohd-adnaan/Diabetic_Blindness_Detection",
-  },
   {
     name: "Data-Bird",
     info: [

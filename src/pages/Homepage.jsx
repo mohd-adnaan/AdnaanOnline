@@ -151,7 +151,7 @@ const Homepage = () => {
               <Box textAlign={{ base: "center", md: "left" }} w="100%" mt={{ base: "2", md: "4" }}>
                 <PrimaryButton
                   as="a"
-                  href="mailto:mohammadadnan@zhcet.ac.in"
+                  href="mailto:iamadnaanmohd@gmail.com"
                   theme={secondary}
                   w={{ base: "160px", md: "180px" }}
                   h={{ base: "44px", md: "52px" }}

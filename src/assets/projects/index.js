@@ -7,7 +7,7 @@ export {default as TTT} from "./TicTacToe.gif";
 export { default as ParkEaze } from "./ParkEaze.gif";
 export { default as Kisaan } from "./Kisaan.gif";
 export { default as FloatingPiano} from "./FloatingPiano.gif";
-export { default as Diabetic_Blindness_Detection} from "./diabetic-retinopathy-detection.jpeg";
+export { default as gloveguide} from "./gloveguide.gif";
 export { default as ImageSegmentation } from "./ImageSegmentation.gif";
 export { default as Grow } from "./Grow.gif";
 export { default as Echo } from "./Echo.gif";

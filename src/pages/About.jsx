@@ -70,7 +70,7 @@ const About = () => {
             flex="1"
           >
             <Body mb="2em" textAlign={{ sm: 'center', md: 'justify' }}>
-              Hi! I'm Adnaan, Pursuing MS in Electrical and Computer Engineering from McGill University, Canada.
+              Hi! I'm Adnaan, Pursuing MSc in Electrical and Computer Engineering from McGill University, Canada.
               I did my Bachelors in Computer Engineering from Aligarh Muslim University, India.
               I thrive on engaging with captivating projects that not only challenge
               my knowledge but also introduce me to the dynamic and transformative
