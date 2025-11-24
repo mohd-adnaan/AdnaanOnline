@@ -1,7 +1,8 @@
 import React, { Suspense } from 'react';
 import SectionHeader from '../components/miscellaneous/SectionHeader';
 import Bullet from '../components/miscellaneous/Bullet';
-import { Box, Spinner, Stack } from '@chakra-ui/react';
+import { Box, Spinner, Stack, Link } from '@chakra-ui/react';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { motion } from 'framer-motion';
 import { Body, Heading2, Heading3 } from '../components/Typography/index';
 import useColorSwitcher from '../utils/useColorSwitcher';
@@ -80,7 +81,7 @@ const About = () => {
               <Heading3>What I've been up to:</Heading3>
               <Stack as="ul">
                 <Bullet as="li">My interest is in making machines understand and perform tasks as we humans do.</Bullet>
-                <Bullet as="li">I have applied knowledge of Machine Learning, Data Science, Image Processing and love building softwares.</Bullet>
+                <Bullet as="li">I have applied knowledge of Machine Learning and love building softwares.</Bullet>
                 <Bullet as="li">Fun Facts : Gluten & Lactose Intolerance and likes Reading.</Bullet>
               </Stack>
             </Box>
@@ -89,22 +90,71 @@ const About = () => {
               <Heading3>Education</Heading3>
               <Stack as="ul">
                 {/* Education details extracted from CV */}
-                <Bullet as="li">Master of Science in Electrical and Computer Engineering - McGill University</Bullet>
-                <Bullet as="li">Bachelors of Technology in Computer Engineering - Aligarh Muslim University, CPI: 9.0</Bullet>
-                <Bullet as="li">Senior Secondary HighSchool(XII Class), Radha Krishna Public Sr. Sec School, Grade: 95.4% </Bullet>
-                <Bullet as="li">HighSchool(X Class), Radha Krishna Public Sr. Sec School, Grade: 93.4%</Bullet>
+                <Bullet as="li">Master of Science in Electrical and Computer Engineering - <b>McGill University</b></Bullet>
+                <Bullet as="li">Bachelors of Technology in Computer Engineering - <b>Aligarh Muslim University, CPI: 9.0</b></Bullet>
+                <Bullet as="li">Senior Secondary HighSchool(XII Class), Radha Krishna Public Sr. Sec School, <b>Grade: 95.4% </b></Bullet>
+                <Bullet as="li">HighSchool(X Class), Radha Krishna Public Sr. Sec School, <b>Grade: 93.4%</b></Bullet>
               </Stack>
             </Box>
             {/* Internship Section */}
             <Box>
               <Heading3>Internships and Work Experiences</Heading3>
               <Stack as="ul">
-                {/* Internship details extracted from CV */}
-                <Bullet as="li">SDE Intern - STARlab Capital, Illinois, USA</Bullet>
-                <Bullet as="li">Solution Engineering Intern - Prodigal, Mumbai</Bullet>
-                <Bullet as="li">Graduate Research Intern - McGill University, Canada</Bullet>
-                <Bullet as="li">Research Intern - Christian-Albrechts-Universität zu Kiel, Germany</Bullet>
-                <Bullet as="li">Summer Research Intern - National Remote Sensing Center, Indian Space Research Organisation (ISRO)</Bullet>
+                <Bullet as="li">
+                  SDE Intern - STARlab Capital, Illinois, USA {" "}
+                  <Link
+                    href="https://drive.google.com/file/d/1HzesoPyM3rd4amRBbyqeilgyUFdDfjgI/view?usp=drive_link"
+                    isExternal
+                    color="blue.500"
+                    textDecoration="underline"
+                  >
+                    <ExternalLinkIcon mx="3px" />
+                  </Link>
+                </Bullet>
+                <Bullet as="li">
+                  Solution Engineering Intern - Prodigal, Mumbai {" "}
+                  <Link
+                    href="https://drive.google.com/file/d/1rQnrRKja3KtY99oBK4xIX6VZ3lBEO6GP/view?usp=sharing"
+                    isExternal
+                    color="blue.500"
+                    textDecoration="underline"
+                  >
+                    <ExternalLinkIcon mx="3px" />
+                  </Link>
+                </Bullet>
+                <Bullet as="li">
+                  Graduate Research Intern - McGill University, Canada {" "}
+                  <Link
+                    href="https://drive.google.com/file/d/1VKYRIhqOOtHAXs4VCIsoCYyXtOW-2p03/view?usp=sharing"
+                    isExternal
+                    color="blue.500"
+                    textDecoration="underline"
+                  >
+                   <ExternalLinkIcon mx="3px" />
+                  </Link>
+                </Bullet>
+                <Bullet as="li">
+                  Research Intern - Christian-Albrechts-Universität zu Kiel, Germany {" "}
+                  <Link
+                    href="https://drive.google.com/file/d/1Wq2vyF5phup_Hhjmo0HEZ5ALfa4kP6jC/view?usp=sharing"
+                    isExternal
+                    color="blue.500"
+                    textDecoration="underline"
+                  >
+                    <ExternalLinkIcon mx="3px" />
+                  </Link>
+                </Bullet>
+                <Bullet as="li">
+                  Summer Research Intern - National Remote Sensing Center, Indian Space Research Organisation (ISRO) {" "}
+                  <Link
+                    href="https://drive.google.com/file/d/1ve-WShra_BAx8sIQOE20FD7xUF20etpd/view?usp=sharing"
+                    isExternal
+                    color="blue.500"
+                    textDecoration="underline"
+                  >
+                    <ExternalLinkIcon mx="3px" />
+                  </Link>
+                </Bullet>
               </Stack>
             </Box>
             {/* Awards & Honors Section */}
