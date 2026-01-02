@@ -6,16 +6,14 @@ import {
   Flex,
   Box,
 } from "@chakra-ui/react";
-import useColorSwitcher from "../../utils/useColorSwitcher";
+import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 import { NavLink } from "./NavLink";
 import MobileNavLink from "./MobileNavLink";
-
 import "./styles.css";
 import { motion } from "framer-motion";
 
 const Navbar = (props) => {
-  const { text, SwitchIcon } = useColorSwitcher();
-  const { toggleColorMode } = useColorMode();
+  const { toggleColorMode, colorMode } = useColorMode();
   const [boxClass, setBoxClass] = useState("");
   const [clicked, setClicked] = useState(null);
   const colorDark = useColorModeValue("gray.800", "white");
@@ -24,76 +22,104 @@ const Navbar = (props) => {
 
   const buttons = [
     {
-      name: "Home",
+      name: "home",
       link: "",
     },
     {
-      name: "About",
+      name: "about",
       link: "about",
     },
     {
-      name: "Skills",
+      name: "skills",
       link: "skills",
     },
     {
-      name: "Projects",
+      name: "projects",
       link: "projects",
     },
     {
-      name: "Contact Info",
+      name: "contact info",
       link: "contact",
     },
   ];
 
   return (
-    <Flex align="center" justify="space-between" mt={7} w="100%">
-      {/* Mobile hamburger menu - Left side */}
-      <Box
-        id="nav-icon2"
-        onClick={() => {
-          setBoxClass(prev => (prev === "" ? "open" : ""));
-          setClicked(prev => (prev === null ? 1 : prev ^ 1));
-        }}
-        className={boxClass}
-        display={["flex", "flex", "flex", "none"]}
-        ml={4}
-        cursor="pointer"
-        p={2}
-        borderRadius="md"
-        _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
-        transition="all 0.2s ease"
-      >
-        <Box as="span" background={colorDark}></Box>
-        <Box as="span" background={colorDark}></Box>
-        <Box as="span" background={colorDark}></Box>
-        <Box as="span" background={colorDark}></Box>
-        <Box as="span" background={colorDark}></Box>
-        <Box as="span" background={colorDark}></Box>
-      </Box>
+    <Box w="100%" mt={7}>
+      <Flex align="center" justify="space-between" w="100%" position="relative">
+        <Box
+          id="nav-icon2"
+          onClick={() => {
+            setBoxClass(prev => (prev === "" ? "open" : ""));
+            setClicked(prev => (prev === null ? 1 : prev ^ 1));
+          }}
+          className={boxClass}
+          display={["flex", "flex", "flex", "none"]}
+          ml={4}
+          cursor="pointer"
+          p={2}
+          borderRadius="md"
+          _hover={{ bg: useColorModeValue("gray.100", "gray.700") }}
+          transition="all 0.2s ease"
+          zIndex={1}
+        >
+          <Box as="span" background={colorDark}></Box>
+          <Box as="span" background={colorDark}></Box>
+          <Box as="span" background={colorDark}></Box>
+          <Box as="span" background={colorDark}></Box>
+          <Box as="span" background={colorDark}></Box>
+          <Box as="span" background={colorDark}></Box>
+        </Box>
 
-      {/* Desktop navigation - Center */}
-      <Flex display={["none", "none", "none", "flex"]} width="xl" justify="center">
-        {buttons.map((b, id) => {
-          return <NavLink name={b.name} link={b.link} key={id} />;
-        })}
+        {/* Desktop navigation - Center */}
+        <Flex
+          display={["none", "none", "none", "flex"]}
+          justify="center"
+          align="center"
+          position="absolute"
+          left="50%"
+          transform="translateX(-50%)"
+          bg={useColorModeValue("white", "gray.800")}
+          borderRadius="2xl"
+          px={6}
+          py={3}
+          shadow="md"
+          border="1px solid"
+          borderColor={useColorModeValue("gray.200", "gray.600")}
+          minW="600px"
+        >
+          {buttons.map((b, id) => {
+            return <NavLink name={b.name} link={b.link} key={id} />;
+          })}
+        </Flex>
+
+        {/* Dark/Light toggle - Right side */}
+        <IconButton
+          fontSize="3xl"
+          size="xl"
+          aria-label={`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`}
+          variant="unstyled"
+          color="current"
+          onClick={toggleColorMode}
+          icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+          mr={4}
+          p={2}
+          _hover={{
+            transform: "scale(1.1)",
+            color: useColorModeValue("gray.600", "gray.300")
+          }}
+          _focus={{
+            boxShadow: "none",
+            outline: "none"
+          }}
+          _active={{
+            transform: "scale(0.95)",
+            bg: "transparent"
+          }}
+          transition="all 0.2s ease"
+          zIndex={1}
+          {...props}
+        />
       </Flex>
-
-      {/* Dark/Light toggle - Right side */}
-      <IconButton
-        fontSize="xl"
-        aria-label={`Switch to ${text} mode`}
-        variant="ghost"
-        color="current"
-        onClick={toggleColorMode}
-        icon={<SwitchIcon />}
-        mr={4}
-        borderRadius="full"
-        _hover={{
-          bg: useColorModeValue("gray.100", "gray.700")
-        }}
-        transition="all 0.2s ease"
-        {...props}
-      />
 
       {/* Clean Mobile Menu */}
       {clicked === 1 && (
@@ -151,7 +177,7 @@ const Navbar = (props) => {
           }}
         />
       )}
-    </Flex>
+    </Box>
   );
 };
 

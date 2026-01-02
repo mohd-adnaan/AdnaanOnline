@@ -45,10 +45,10 @@ return { text, isErasing };
 const Homepage = () => {
   const { colorDark, secondary } = useColorSwitcher();
   const { text: animatedText, isErasing } = useTextAnimation([
-    'Full-Stack Software Developer',
-    'ML & AI Enthusiast',
-    'MSc ECE at McGill University, Canada',
-    'B.Tech CSE from Aligarh Muslim University',
+    'software engineer',
+    'ml & ai enthusiast',
+    'msc ece at mcgill university, canada',
+    'b.tech cse from amu, india',
   ], 150, 75, 2000);
   const placeholderStyle = {
     display: 'inline-block', 
@@ -84,7 +84,7 @@ const Homepage = () => {
                 fontWeight="bold"
                 textAlign={{ base: "center", md: "left" }}
               >
-                Hello, I'm
+                hi, i'm
               </Text>
               
               <Box 
@@ -99,7 +99,7 @@ const Homepage = () => {
                     ml={isErasing ? { base: '8vh', md: '0' } : '0'}
                     transition="margin-left 0.3s ease"
                   >
-                    Adnaan
+                    adnaan
                   </Box>
                   <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '8vh', height: '8vh' }}>
                     {isErasing ? 

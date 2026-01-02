@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react"
@@ -10,6 +10,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 import Navbar from "./components/Navbar/Navbar";
+import MobileBottomNav from "./components/Navbar/MobileBottomNav";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -36,12 +37,18 @@ function App() {
         transition={{ duration: 1, ease: "easeInOut" }}
         exit={{ opacity: 0 }}
       >
-        <Container
-          maxW={{ sm: "container.sm", md: "container.lg", lg: "container.xl" }}
+        <Box
+          maxW="1400px"
+          mx="auto"
+          px={{ base: "20px", md: "40px", lg: "60px", xl: "80px" }}
+          pb={{ base: "80px", md: "0" }} // Add padding bottom on mobile for bottom nav
         >
           <Navbar />
           <AnimatedRoutes />
-        </Container>
+        </Box>
+        
+        {/* Mobile Bottom Navigation */}
+        <MobileBottomNav />
       </motion.div>
       <Analytics />
     </>

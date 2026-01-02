@@ -1,12 +1,14 @@
 import React, { Suspense } from 'react';
 import SectionHeader from '../components/miscellaneous/SectionHeader';
 import Bullet from '../components/miscellaneous/Bullet';
-import { Box, Spinner, Stack, Link } from '@chakra-ui/react';
+import { Box, Spinner, Stack, Link, Flex, VStack } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { motion } from 'framer-motion';
 import { Body, Heading2, Heading3 } from '../components/Typography/index';
 import useColorSwitcher from '../utils/useColorSwitcher';
 
+// Import components
+const InteractivePortrait = React.lazy(() => import('../components/miscellaneous/InteractivePortrait'));
 const ProfileImage = React.lazy(() => import('../components/miscellaneous/ProfileImage'));
 
 const About = () => {
@@ -19,87 +21,138 @@ const About = () => {
       transition={{ duration: 0.75, ease: 'easeInOut' }}
       exit={{ opacity: 0 }}
     >
-      <Box as="section" outline="0" tabIndex={-1} w="100%" my="4em" px={{ base: '0', md: '20', xl: '0' }}>
-        <Box w="100%" mb={{ base: '32px', md: '50px' }}>
+      <Box 
+        as="section" 
+        outline="0" 
+        tabIndex={-1} 
+        maxW="1400px"
+        mx="auto"
+        px={{ base: '20px', md: '40px', lg: '60px', xl: '80px' }}
+        py={{ base: '60px', md: '80px' }}
+      >
+        {/* Header */}
+        <Box w="100%" mb={{ base: '40px', md: '60px' }}>
           <SectionHeader mr="16px">
-            <Heading2>About</Heading2>
+            <Heading2>about</Heading2>
           </SectionHeader>
         </Box>
-        <Stack
-          align={{ base: "center", xl: "flex-start" }}
-          spacing={{ base: '6', md: '8', xl: '12' }}
-          direction={{ base: 'column', xl: 'row' }}
-          justify={{ base: 'center', xl: 'flex-start' }}
-          mt={{ xl: '2em' }}
+
+        {/* Main Content */}
+        <Flex
+          direction={{ base: 'column', lg: 'row' }}
+          gap={{ base: '40px', lg: '60px' }}
+          align={{ base: 'center', lg: 'flex-start' }}
         >
-          <Box
-            bg={lightGreyBg}
-            rounded="full"
-            display="grid"
-            placeItems="center"
-            p={{ base: '8px', md: '16px' }}
+          {/* LEFT SIDE - Interactive Portrait + Profile Photo */}
+          <VStack
+            spacing={{ base: '24px', md: '32px', lg: '40px' }}
             flexShrink={0}
-            alignSelf={{ xl: "flex-start" }}
+            alignSelf={{ base: 'center', lg: 'flex-start' }}
+            display="flex" // ✅ ALWAYS SHOW (removed the base: 'none')
+            w={{ base: '100%', lg: 'auto' }}
+            maxW={{ base: '300px', md: '350px', lg: '400px' }}
           >
+            {/* Interactive Portrait */}
+            <Box w="100%">
+              <Suspense
+                fallback={
+                  <Box
+                    width="100%"
+                    height={{ base: "300px", md: "400px", lg: "500px" }}
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                  >
+                    <Spinner
+                      thickness="4px"
+                      speed="0.65s"
+                      emptyColor="gray.200"
+                      color="blue.500"
+                      size="xl"
+                    />
+                  </Box>
+                }
+              >
+                <InteractivePortrait />
+              </Suspense>
+            </Box>
+
+            {/* Profile Photo Below */}
             <Box
-              bg={greyBg}
+              bg={lightGreyBg}
               rounded="full"
               display="grid"
               placeItems="center"
-              p={{ base: '8px', md: '16px' }}
+              p={{ base: '6px', md: '8px', lg: '12px' }}
             >
-              <Suspense
-                fallback={
-                  <Spinner
-                    thickness="4px"
-                    speed="0.65s"
-                    emptyColor="gray.200"
-                    color="blue.500"
-                    size="xl"
-                  />
-                }
+              <Box
+                bg={greyBg}
+                rounded="full"
+                display="grid"
+                placeItems="center"
+                p={{ base: '6px', md: '8px', lg: '12px' }}
               >
-                <ProfileImage />
-              </Suspense>
+                <Suspense
+                  fallback={
+                    <Spinner
+                      thickness="4px"
+                      speed="0.65s"
+                      emptyColor="gray.200"
+                      color="blue.500"
+                      size="xl"
+                    />
+                  }
+                >
+                  <ProfileImage />
+                </Suspense>
+              </Box>
             </Box>
-          </Box>
+          </VStack>
+
+          {/* RIGHT SIDE - Content */}
           <Stack
-            spacing={{ base: '6', md: '8' }}
-            p="8px"
-            w={{ base: '100%', xl: '70%' }}
-            maxW={{ xl: "none" }}
+            spacing={{ base: '32px', md: '40px' }}
             flex="1"
+            w="100%"
+            maxW={{ lg: '800px' }}
           >
-            <Body mb="2em" textAlign={{ sm: 'center', md: 'justify' }}>
-              Hi! I'm Adnaan, Pursuing MSc in Electrical and Computer Engineering from McGill University, Canada.
+            {/* Intro */}
+            <Body 
+              fontSize={{ base: 'md', md: 'lg' }}
+              lineHeight="1.7"
+              textAlign={{ base: 'center', lg: 'left' }}
+            >
+              hi! i'm adnaan, Pursuing MSc in Electrical and Computer Engineering from McGill University, Canada.
               I did my Bachelors in Computer Engineering from Aligarh Muslim University, India.
               I thrive on engaging with captivating projects that not only challenge
               my knowledge but also introduce me to the dynamic and transformative
               technologies shaping our world.
             </Body>
+
+            {/* What I've been up to */}
             <Box>
-              <Heading3>What I've been up to:</Heading3>
-              <Stack as="ul">
-                <Bullet as="li">My interest is in making machines understand and perform tasks as we humans do.</Bullet>
-                <Bullet as="li">I have applied knowledge of Machine Learning and love building softwares.</Bullet>
-                <Bullet as="li">Fun Facts : Gluten & Lactose Intolerance and likes Reading.</Bullet>
+              <Heading3 mb="16px">What I've been up to:</Heading3>
+              <Stack as="ul" spacing="12px">
+                <Bullet as="li">my interest is in making machines understand and perform tasks as we humans do.</Bullet>
+                <Bullet as="li">fun facts : gluten Intolerant & outside of work, i'm nerdy about tech gadgets, loves trying new things. Oh, I make content too.</Bullet>
               </Stack>
             </Box>
-            {/* Education Section */}
+
+            {/* Education */}
             <Box>
-              <Heading3>Education</Heading3>
-              <Stack as="ul">
-                {/* Education details extracted from CV */}
+              <Heading3 mb="16px">Education</Heading3>
+              <Stack as="ul" spacing="12px">
                 <Bullet as="li">Master of Science in Electrical and Computer Engineering - <b>McGill University</b></Bullet>
                 <Bullet as="li">Bachelors of Technology in Computer Engineering - <b>Aligarh Muslim University, CPI: 9.0</b></Bullet>
                 <Bullet as="li">Senior Secondary HighSchool(XII Class), Radha Krishna Public Sr. Sec School, <b>Grade: 95.4% </b></Bullet>
                 <Bullet as="li">HighSchool(X Class), Radha Krishna Public Sr. Sec School, <b>Grade: 93.4%</b></Bullet>
               </Stack>
             </Box>
-            {/* Internship Section */}
+
+            {/* Internships - This is where your photo aligns */}
             <Box>
-              <Heading3>Internships and Work Experiences</Heading3>
-              <Stack as="ul">
+              <Heading3 mb="16px">Internships and Work Experiences</Heading3>
+              <Stack as="ul" spacing="12px">
                 <Bullet as="li">
                   SDE Intern - STARlab Capital, Illinois, USA {" "}
                   <Link
@@ -157,12 +210,12 @@ const About = () => {
                 </Bullet>
               </Stack>
             </Box>
-            {/* Awards & Honors Section */}
+
+            {/* Awards */}
             <Box>
-              <Heading3>Awards & Honors</Heading3>
-              <Stack as="ul">
-                {/* Awards & Honors details extracted from CV */}
-                <Bullet as="li">Master's Research Scholarship  by Fonds de recherche du Québec - Nature et technologies (<strong>FRQ-NT</strong>)2025</Bullet>
+              <Heading3 mb="16px">Awards & Honors</Heading3>
+              <Stack as="ul" spacing="12px">
+                <Bullet as="li">Master's Research Scholarship by Fonds de recherche du Québec - Nature et technologies (<strong>FRQ-NT</strong>) 2025</Bullet>
                 <Bullet as="li">Sir Syed Global Scholar Award (<strong>SSGSA</strong>) 2024</Bullet>
                 <Bullet as="li">Linux Foundation Training (<strong>LiFT</strong>) Scholarship for 2024</Bullet>
                 <Bullet as="li">DAAD WISE Scholar 2024 - 3 months Internship at University of Kiel, Germany</Bullet>
@@ -172,11 +225,11 @@ const About = () => {
                 <Bullet as="li">University Merit Scholarship, AMU - Top performer (<strong>Gold Medalist</strong>) in freshman year</Bullet>
               </Stack>
             </Box>
-            {/* Volunteering Section */}
+
+            {/* Volunteering */}
             <Box>
-              <Heading3>Volunteering and Positions</Heading3>
-              <Stack as="ul">
-                {/* Volunteering details extracted from CV */}
+              <Heading3 mb="16px">Volunteering and Positions</Heading3>
+              <Stack as="ul" spacing="12px">
                 <Bullet as="li">Research & Development Lead - IEEE CS Society A.M.U</Bullet>
                 <Bullet as="li">Secretary - IEEE Students Branch A.M.U</Bullet>
                 <Bullet as="li">Treasurer - A.C.M Association for Computer Machinery</Bullet>
@@ -184,11 +237,10 @@ const About = () => {
               </Stack>
             </Box>
           </Stack>
-        </Stack>
+        </Flex>
       </Box>
     </motion.div>
   );
 };
 
 export default About;
-

@@ -35,7 +35,7 @@ const Contact = ({ ...props }) => {
       >
         <Box mb="72px">
           <SectionHeader mr="16px">
-            <Heading2>Contact</Heading2>
+            <Heading2>contact</Heading2>
           </SectionHeader>
         </Box>
         <Box
@@ -68,7 +68,7 @@ const Contact = ({ ...props }) => {
             </PrimaryButton>
             <PrimaryButton
               as="a"
-              href="https://drive.google.com/file/d/1SZpQd-9sZf8lnWbIs-eWFEwQ_5pOrrUP/view?usp=sharing"
+              href="https://drive.google.com/file/d/1daBWt29WC8c3RcU_ug3LH5zX2EqRANKs/view?usp=sharing"
               theme={secondary}
               mt={4}
               target="_blank"

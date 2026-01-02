@@ -22,23 +22,23 @@ const Navbar = (props) => {
 
   const buttons = [
     {
-      name: "Home",
+      name: "home",
       link: "",
     },
     {
-      name: "About",
+      name: "about",
       link: "about",
     },
     {
-      name: "Skills",
+      name: "skills",
       link: "skills",
     },
     {
-      name: "Projects",
+      name: "projects",
       link: "projects",
     },
     {
-      name: "Contact Info",
+      name: "contact info",
       link: "contact",
     },
   ];
@@ -46,7 +46,7 @@ const Navbar = (props) => {
   return (
     <Box w="100%" mt={7}>
       <Flex align="center" justify="space-between" w="100%" position="relative">
-        {/* Mobile hamburger menu - Left side */}
+        {/* Mobile hamburger menu - HIDDEN ON MOBILE, shown on tablet only */}
         <Box
           id="nav-icon2"
           onClick={() => {
@@ -54,7 +54,7 @@ const Navbar = (props) => {
             setClicked(prev => (prev === null ? 1 : prev ^ 1));
           }}
           className={boxClass}
-          display={["flex", "flex", "flex", "none"]}
+          display={["none", "flex", "flex", "none"]} // Hidden on mobile (base), shown on sm/md, hidden on lg+
           ml={4}
           cursor="pointer"
           p={2}
@@ -122,7 +122,7 @@ const Navbar = (props) => {
         />
       </Flex>
 
-      {/* Clean Mobile Menu */}
+      {/* Tablet Menu (for sm/md breakpoints) */}
       {clicked === 1 && (
         <Box
           as={motion.div}
@@ -162,7 +162,7 @@ const Navbar = (props) => {
         </Box>
       )}
 
-      {/* Simple Overlay */}
+      {/* Overlay for tablet menu */}
       {clicked === 1 && (
         <Box
           position="fixed"

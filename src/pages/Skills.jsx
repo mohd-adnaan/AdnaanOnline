@@ -47,7 +47,7 @@ const Skills = ({ ...props }) => {
       >
         <Box mb="50px">
           <SectionHeader mr="16px">
-            <Heading2>Skills</Heading2>
+            <Heading2>skills</Heading2>
           </SectionHeader>
         </Box>
         <Text

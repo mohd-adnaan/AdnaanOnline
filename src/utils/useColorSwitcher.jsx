@@ -6,11 +6,12 @@ const useColorSwitcher = () => {
   const hoverLight = useColorModeValue("neutral.50", "neutral.800");
   const hoverDark = useColorModeValue("neutral.800", "neutral.100");
 
-  const secondary = useColorModeValue("blue.500", "green.200");
+  const secondary = useColorModeValue("#008fb0", "#3cdd9a");
 
   const greyBg = useColorModeValue("neutral.300", "neutral.500");
   const lightGreyBg = useColorModeValue("neutral.100", "neutral.700");
-  const aroundPhoto = useColorModeValue("blue.300","blue.500");
+  const aroundPhoto = useColorModeValue("#008fb0", "#3cdd9a");
+  
   return {
     colorLight,
     colorDark,

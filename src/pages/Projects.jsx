@@ -32,7 +32,7 @@ const Projects = ({ ...props }) => {
       >
         <Box mb="128px">
           <SectionHeader mr="16px">
-            <Heading2>Projects</Heading2>
+            <Heading2>pet projects</Heading2>
           </SectionHeader>
         </Box>
         {ProjectsList.map((project, id) => (
