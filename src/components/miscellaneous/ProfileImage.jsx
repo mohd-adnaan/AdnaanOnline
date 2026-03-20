@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/react";
-import profile from "../../assets/personal/new_adnaan.JPG";
+import profile from "../../assets/personal/adnaan.JPG";
 import React from 'react';
 
 const ProfileImage = () => {
@@ -17,7 +17,7 @@ const ProfileImage = () => {
       }}
       src={profile}
       fallbackSrc="https://via.placeholder.com/500"
-      alt="Mohammad Adnaan"
+      alt="Mohammad Adnaan's Headshot"
     />
   );
 };

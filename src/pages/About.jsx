@@ -8,7 +8,7 @@ import { Body, Heading2, Heading3 } from '../components/Typography/index';
 import useColorSwitcher from '../utils/useColorSwitcher';
 
 // Import components
-const InteractivePortrait = React.lazy(() => import('../components/miscellaneous/InteractivePortrait'));
+const ParticleSilhouette = React.lazy(() => import('../components/miscellaneous/Particlesilhouette'));
 const ProfileImage = React.lazy(() => import('../components/miscellaneous/ProfileImage'));
 
 const About = () => {
@@ -21,10 +21,10 @@ const About = () => {
       transition={{ duration: 0.75, ease: 'easeInOut' }}
       exit={{ opacity: 0 }}
     >
-      <Box 
-        as="section" 
-        outline="0" 
-        tabIndex={-1} 
+      <Box
+        as="section"
+        outline="0"
+        tabIndex={-1}
         maxW="1400px"
         mx="auto"
         px={{ base: '20px', md: '40px', lg: '60px', xl: '80px' }}
@@ -54,26 +54,13 @@ const About = () => {
           >
             {/* Interactive Portrait */}
             <Box w="100%">
-              <Suspense
-                fallback={
-                  <Box
-                    width="100%"
-                    height={{ base: "300px", md: "400px", lg: "500px" }}
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                  >
-                    <Spinner
-                      thickness="4px"
-                      speed="0.65s"
-                      emptyColor="gray.200"
-                      color="blue.500"
-                      size="xl"
-                    />
-                  </Box>
-                }
-              >
-                <InteractivePortrait />
+              <Suspense fallback={
+                <Box width="100%" height={{ base: "180px", md: "230px", lg: "280px" }}
+                  display="flex" alignItems="center" justifyContent="center">
+                  <Spinner thickness="4px" speed="0.65s" emptyColor="gray.200" color="blue.500" size="xl" />
+                </Box>
+              }>
+                <ParticleSilhouette />
               </Suspense>
             </Box>
 
@@ -117,7 +104,7 @@ const About = () => {
             maxW={{ lg: '800px' }}
           >
             {/* Intro */}
-            <Body 
+            <Body
               fontSize={{ base: 'md', md: 'lg' }}
               lineHeight="1.7"
               textAlign={{ base: 'center', lg: 'left' }}
@@ -183,13 +170,13 @@ const About = () => {
                     color="blue.500"
                     textDecoration="underline"
                   >
-                   <ExternalLinkIcon mx="3px" />
+                    <ExternalLinkIcon mx="3px" />
                   </Link>
                 </Bullet>
                 <Bullet as="li">
                   Research Intern - Christian-Albrechts-Universität zu Kiel, Germany {" "}
                   <Link
-                    href="https://drive.google.com/file/d/1Wq2vyF5phup_Hhjmo0HEZ5ALfa4kP6jC/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1VAfR5r_LzWnMP1rsz2oKL21JUYKolU4y/view?usp=drive_link"
                     isExternal
                     color="blue.500"
                     textDecoration="underline"

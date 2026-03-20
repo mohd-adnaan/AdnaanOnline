@@ -13,4 +13,5 @@ export { default as Grow } from "./Grow.gif";
 export { default as Echo } from "./Echo.gif";
 export { default as CovidProject} from "./CovidProject.jpeg";
 export { default as SightXCyberSight } from "./SightXCybersight.gif";
-export { default as HashmiDawakhana } from "./HashmiDawakhana.jpeg";
+export { default as HashmiDawakhana } from "./HashmiDawakhana.png";
+export { default as Reconstruct } from "./Reconstruct.png";

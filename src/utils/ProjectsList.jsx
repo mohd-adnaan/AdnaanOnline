@@ -14,17 +14,30 @@ import {
   CovidProject,
   SightXCyberSight,
   HashmiDawakhana,
-  gloveguide
+  gloveguide,
+  Reconstruct
 } from "../assets/projects";
 import ProjectImage from "../components/miscellaneous/ProjectImage"
 const ProjectsList = [
+
+  {
+    name: "The Reconstruct Initiative",
+    info: [
+      "A transdisciplinary collaboration of academic researchers and research labs working with governmental, industry and community partners to develop and implement solutions for mass deployment of deep energy retrofits (DERs) for Quebec and Canada."
+    ],
+    learnMore: "https://aeechair.research.mcgill.ca/en/initiatives/the-reconstruct-initiative-2",
+    media: <ProjectImage src={Reconstruct} alt="Reconstruct initiative" />,
+    live: "https://aeechair.research.mcgill.ca/en/initiatives/the-reconstruct-initiative-2",
+    repo: "https://github.com/reconstruct-mcgill/mcda",
+  },
+
     {
     name: "Hashmi Unani Pharmacy Website",
     info: [
-      "Developed a comprehensive healthcare platform for a 95-year-old traditional medicine institution specializing in Unani and Ayurvedic treatments.",
-      "Built full-stack application with React/TypeScript frontend, PHP backend, and MySQL database.",
-      "Features no-code blog management system with WYSIWYG editor and analytics integration.",
-      "Implemented online appointment booking, patient portal, multilingual support (English/Hindi), and secure data management.",],
+      "Developed a healthcare platform for a 95-year-old traditional medicine institution specializing in Unani & Ayurvedic treatments",
+      "Built full-stack application with React/TypeScript frontend, PHP backend & MySQL database.",
+      "Implemented online appointment booking, patient portal, multilingual support & data mgmt.",
+    ],
     media: <ProjectImage src={HashmiDawakhana} alt="Hashmi Dawakhana" />,
     live: "https://www.hashmi.com/",
     repo: "https://github.com/mohd-adnaan/Hashmi-Groups",
@@ -40,14 +53,14 @@ const ProjectsList = [
     live: "https://adnaanonline.vercel.app/",
     repo: "https://github.com/mohd-adnaan/AdnaanOnline",
   },
-    {
-    name:"GloveGuide",
+  {
+    name: "GloveGuide",
     info:
-    [
-    "Glove Guide is a wearable navigation system for cyclists, runners, and pedestrians that uses vibration feedback to provide turn-by-turn directions, no screens or sounds required.",
-    "By integrating small motors into gloves and connecting them via Bluetooth to a mobile app using Google Maps API, users can focus on the road while navigating safely.",
-    "Group Project for the Human Computer Interaction Course ECSE-542 at McGill University By Mohammad Adnaan, Kevin Wu, and William Goyens.",
-    ],
+      [
+        "Glove Guide is a wearable navigation system for cyclists, runners, and pedestrians that uses vibration feedback to provide turn-by-turn directions, no screens or sounds required.",
+        "By integrating small motors into gloves and connecting them via Bluetooth to a mobile app using Google Maps API, users can focus on the road while navigating safely.",
+        "Group Project for the Human Computer Interaction Course ECSE-542 at McGill University By Mohammad Adnaan, Kevin Wu, and William Goyens.",
+      ],
     media: <ProjectImage src={gloveguide} type="gif" style={{ maxWidth: "300px", maxHeight: "900px" }} />,
     live: "https://mohd-adnaan.github.io/gloveguide/",
     repo: "https://github.com/mohd-adnaan/gga",
@@ -72,7 +85,7 @@ const ProjectsList = [
       "An app for returning the DAC of the current and marked location of the user on the Indian Map along with building Contours",
       "Uses React-native, Postgres ,Node and PhP",
     ],
-    media: <ProjectImage src={DAC} type="gif" style={{ maxWidth: "220px", maxHeight: "1000px" }}/>,
+    media: <ProjectImage src={DAC} type="gif" style={{ maxWidth: "220px", maxHeight: "1000px" }} />,
     live: null,
     repo: "https://github.com/mohd-adnaan/DAC",
   },
@@ -97,7 +110,7 @@ const ProjectsList = [
     ],
     media: <ProjectImage src={CovidProject} alt="Covid Resources Project" />,
     live: "https://covid-resources-chi.vercel.app",
-    repo : null,
+    repo: null,
   },
   {
     name: "Tech-Quizzes",
@@ -110,9 +123,9 @@ const ProjectsList = [
     live: "https://techquizzes.vercel.app/",
     repo: "https://github.com/mohd-adnaan/Tech-Quizzes",
   },
- 
- 
-   {
+
+
+  {
     name: "Echo Music Player",
     info: [
       "Echo Music Player- Offline Music is an offline music player app designed using open source code. It has an attractive Visualizer which suits best on pop songs.",
@@ -123,7 +136,7 @@ const ProjectsList = [
     media: <ProjectImage src={Echo} type="gif" />,
     live: null,
     repo: null,
-  }, 
+  },
   {
     name: "ParkEaze",
     info: [
@@ -206,7 +219,7 @@ const ProjectsList = [
     repo: "https://github.com/mohd-adnaan/Data-Bird",
   },
 
-  
+
 ];
 
 export default ProjectsList;
